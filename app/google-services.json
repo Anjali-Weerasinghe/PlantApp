@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "292350031170",
+    "project_id": "planthome-9d399",
+    "storage_bucket": "planthome-9d399.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292350031170:android:9bc7cd2ab9dbffef2ec4db",
+        "android_client_info": {
+          "package_name": "com.example.planthome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292350031170-4do2etbmar7pvp2og26kt9hc5orhslnr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDmGrL1ZPhbV0999Odg_shReb4KVVdGR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292350031170-4do2etbmar7pvp2og26kt9hc5orhslnr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
