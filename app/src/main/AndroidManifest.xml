@@ -9,7 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PlantHome">
-        <activity android:name=".AddPaymentMethod"></activity>
+        <activity android:name=".FertilizerManager"></activity>
+        <activity android:name=".TutorialManager" />
+        <activity android:name=".PlantManager" />
+        <activity
+            android:name=".AdminLogin"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ViewShippingAddress"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".AddPaymentMethod"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".AddShippingAddress"
             android:screenOrientation="portrait"
