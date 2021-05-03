@@ -58,7 +58,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">close navigation drawer</string>
     <string name="communicate">Communicate</string>
-    <!--    <string name="shipping_address">Shipping Address</string>-->
+    <string name="shipping_address">Shipping Address</string>
     <string name="payment_method">Payment Method</string>
     <string name="change_password">Change Password</string>
     <string name="logout">Logout</string>
@@ -75,7 +75,6 @@
     <string name="card_no">Card No</string>
     <string name="expiry_date">Expiry Date</string>
     <string name="cvc">CVC</string>
-    <string name="shipping_address">Shipping Address</string>
     <string name="full_name">Full Name</string>
     <string name="nic">NIC</string>
     <string name="mobile">Mobile</string>
@@ -87,4 +86,94 @@
         <item>Tutorial Manager</item>
         <item>Fertilizer Manager</item>
     </string-array>
+    <string name="Pots">Pots</string>
+    <string name="Fertilizer">Fertilizer</string>
+    <string name="Concrete">Concrete</string>
+    <string name="Price01">Rs.450.00</string>
+    <string name="Metal">Metal</string>
+    <string name="Price02">RS.1000.00</string>
+    <string name="GlazedCeramic">Ceramic</string>
+    <string name="Price03">Rs.650.00</string>
+    <string name="FiberGlass">Fiber Glass</string>
+    <string name="Price04">Rs.4300.00</string>
+
+    <string name="clay">clay</string>
+    <string name="foam">Foam</string>
+    <string name="selfwatering">Self Watering</string>
+    <string name="mineralfertilizer">Mineral Fertilizer</string>
+    <string name="nitrogenfertilizer">Nitrogen Fertilizer</string>
+    <string name="phosphorus">Phosphorus Fertilizer</string>
+    <string name="potassiumfertilizer">Potassium Fertilizer</string>
+    <string name="cms">Calsium, Magnesium and Sulfer</string>
+    <string name="micro" />
+    <string name="micro1">Micronutrient Fertilizer</string>
+    <string name="organic">Organic Fertilizer</string>
+    <string name="plaingreen">Plain Green</string>
+    <string name="price05">Rs.1200.00</string>
+    <string name="ashen">Ashen Glazed</string>
+    <string name="price06">Rs.1200.00</string>
+    <string name="antiqueglazed">Antique Glazed</string>
+    <string name="vitanemglazed">Vitanem Glazed</string>
+    <string name="guardiandf">Guardian DF</string>
+    <string name="price07">Rs.500.00</string>
+    <string name="guardiandl">Guardian DL</string>
+    <string name="price08">Rs.650.00</string>
+    <string name="agrotainPlus">Agrotain Plus</string>
+    <string name="price09">Rs.700.00</string>
+    <string name="superu">Super U</string>
+    <string name="price10">Rs.550.00</string>
+    <string name="description">Description</string>
+    <string name="guardiandes">\?Guardian® and Guardian®-DF contain 66% nitrogen as dicyandiamide (DCD®) ?Guardian®-DL contains 31% nitrogen as dicyandiamide (DCD®) and 10% sulfur as ammonium thiosulfate (ATS)</string>
+    <string name="guardiandfdescription">Guardian® and Guardian®-DF contain 66% nitrogen as dicyandiamide (DCD®) Guardian®-DL contains 31% nitrogen as dicyandiamide (DCD®) and 10% sulfur as ammonium thiosulfate (ATS)</string>
+    <string name="addtoCart">Add To Cart</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="thirteen">13</string>
+    <string name="itemcode">Item Code: 1</string>
+    <string name="potdes">Chinese Style Bonsai Pot Dark Green, Glazed Flower Pot Planter Home. Type: Planters,Material: Ceramic,  Size: 110.6x7.9x4.5cm, Quantity: 1pc.</string>
+    <string name="Cart">cart</string>
+    <string name="addnewpots">Add New Pots</string>
+    <string name="name">Name</string>
+    <string name="category">Category</string>
+    <string name="Price">Price</string>
+    <string name="uploadphoto">Upload a Photo</string>
+    <string name="addpot">ADD POT</string>
+    <string name="addnewfertilizer">Add New Fertilizer</string>
+    <string name="organicfertilizer">Organic Fertilizer</string>
+    <string name="addertilizer">ADD FERTILIZER</string>
+    <string name="updatedeletepots">Updare $ Delete Pots</string>
+    <string name="updateanddeletepots"><![CDATA[Update & Delete Pots]]></string>
+    <string name="itemcode1">Item Code</string>
+    <string name="search">Search</string>
+    <string name="photo">Photo</string>
+    <string name="update">UPDATE</string>
+    <string name="delete">DELETE</string>
+    <string name="updatedeletefertilizer"><![CDATA[Update & Delete Fertilizer]]></string>
+    <string name="desdes">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+    <string name="admin">Admin</string>
+    <string name="id">ID: A20000001B</string>
+    <string name="add">Add</string>
+    <string name="updatedelete"><![CDATA[Update & Delete]]></string>
+    <string name="title_activity_pots_imagesviewer">PotsImagesviewer</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="procare">Pro Care</string>
+    <string name="price11">Rs.5000.00</string>
+    <string name="huminrich">HuminRich</string>
+    <string name="price12">Rs.7000.00</string>
+    <string name="calmags">Calmags</string>
+    <string name="price13">Rs.8000.00</string>
+    <string name="topper">Topper</string>
+    <string name="price14">Rs.350.00</string>
+    <string name="glazedCeramic">Glazed Ceramic</string>
+    <string name="register">Register</string>
+    <string name="Profile">Profile</string>
+
 </resources>
