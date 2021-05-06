@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 
 import com.google.android.material.textfield.TextInputLayout;
@@ -22,6 +23,7 @@ public class AdminLogin extends AppCompatActivity {
     TextInputLayout username,password;
     Spinner spinner;
     Button loginAdmin_btn;
+    ImageView back;
 
 
     @Override
@@ -34,7 +36,13 @@ public class AdminLogin extends AppCompatActivity {
         spinner=findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this,R.array.userType,R.layout.support_simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
-
+        back=findViewById(R.id.btn_back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                back();
+            }
+        });
         loginAdmin_btn=findViewById(R.id.btn_loginAdmin);
         loginAdmin_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +53,13 @@ public class AdminLogin extends AppCompatActivity {
 
 
     }
+
+    private void back() {
+
+        Intent intent=new Intent(this,Home.class);
+        startActivity(intent);
+    }
+
 
     private void loginAdmin() {
 

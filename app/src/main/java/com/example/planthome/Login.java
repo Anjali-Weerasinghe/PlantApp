@@ -4,20 +4,20 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.nfc.Tag;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 
+import com.example.planthome.CurrentOnlineUser.CurrentOnlineCustomer;
+import com.example.planthome.CustomerManagement.ChangePassword;
+import com.example.planthome.CustomerManagement.UserInterface;
+import com.example.planthome.Model.Customer;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 public class Login extends AppCompatActivity {
@@ -32,8 +32,8 @@ public class Login extends AppCompatActivity {
         username=findViewById(R.id.username);
         password=findViewById(R.id.password);
 
-        Button btn2 = (Button) findViewById(R.id.btn_login);
-        btn2.setOnClickListener(new View.OnClickListener() {
+        Button login_btn = (Button) findViewById(R.id.btn_login);
+        login_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                loginCustomer();
@@ -122,28 +122,34 @@ public class Login extends AppCompatActivity {
         String customerEnteredNIC=username.getEditText().getText().toString().trim();
         String customerEnteredPassword=password.getEditText().getText().toString().trim();
 
-        DatabaseReference reference= FirebaseDatabase.getInstance().getReference("customer");
+        final DatabaseReference reference= FirebaseDatabase.getInstance().getReference();
 
-        Query checkCustomer=reference.orderByChild("nic").equalTo(customerEnteredNIC);
+//        Query checkCustomer=reference.orderByChild("nic").equalTo(customerEnteredNIC);
 
-        checkCustomer.addListenerForSingleValueEvent(new ValueEventListener() {
+        reference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.exists()){
+                if(snapshot.child("customer").child(customerEnteredNIC).exists()){
                     username.setError(null);
                     username.setErrorEnabled(false);
 
-                    String passwordFromDB=snapshot.child(customerEnteredNIC).child("password").getValue(String.class);
-                    if(passwordFromDB.equals(customerEnteredPassword)){
+                    Customer customer=snapshot.child("customer").child(customerEnteredNIC).getValue(Customer.class);
+//                    String passwordFromDB=snapshot.child(customerEnteredNIC).child("password").getValue(String.class);
+                    if(customer.getNic().equals(customerEnteredNIC)){
                         username.setError(null);
                         username.setErrorEnabled(false);
+                        if(customer.getPassword().equals(customerEnteredPassword)){
 
-                        String usernameFromDB=snapshot.child(customerEnteredNIC).child("nic").getValue(String.class);
+//                            String usernameFromDB=snapshot.child(customerEnteredNIC).child("nic").getValue(String.class);
 
-                        Intent intent=new Intent(getApplicationContext(),UserInterface.class);
-                        intent.putExtra("username",usernameFromDB);
-                        System.out.println(usernameFromDB);
-                        startActivity(intent);
+                            Intent intent=new Intent(getApplicationContext(), UserInterface.class);
+//                            intent.putExtra("username",usernameFromDB);
+//                            System.out.println(usernameFromDB);
+                            CurrentOnlineCustomer.currentOnlineCustomer=customer;
+                            startActivity(intent);
+
+                        }
+
 
                     }
                     else{
@@ -176,7 +182,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void forgotPassword(){
-        Intent intent6=new Intent(this,ChangePassword.class);
+        Intent intent6=new Intent(this, ChangePassword.class);
         startActivity(intent6);
     }
 }
