@@ -1,4 +1,4 @@
-package com.example.planthome;
+package com.example.planthome.CustomerManagement;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,7 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.planthome.CurrentOnlineUser.CurrentOnlineCustomer;
 
-import com.example.planthome.Model.CustomerPaymentHelperClass;
+import com.example.planthome.CustomerManagement.Model.CustomerPaymentHelperClass;
+import com.example.planthome.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;

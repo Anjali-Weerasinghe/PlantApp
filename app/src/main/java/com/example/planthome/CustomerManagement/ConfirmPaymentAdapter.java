@@ -1,4 +1,4 @@
-package com.example.planthome;
+package com.example.planthome.CustomerManagement;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,7 +12,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.planthome.Model.CustomerPaymentHelperClass;
+import com.example.planthome.CustomerManagement.Model.CustomerPaymentHelperClass;
+import com.example.planthome.R;
 
 import java.util.ArrayList;
 
@@ -50,7 +51,7 @@ public class ConfirmPaymentAdapter extends RecyclerView.Adapter<ConfirmPaymentAd
         holder.select_payment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(context.getApplicationContext(),PlaceOrder.class);
+                Intent intent=new Intent(context.getApplicationContext(), PlaceOrder.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.getApplicationContext().startActivity(intent);
             }

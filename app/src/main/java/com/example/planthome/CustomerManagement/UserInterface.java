@@ -12,9 +12,6 @@ import android.view.MenuItem;
 
 import com.example.planthome.Home;
 import com.example.planthome.R;
-import com.example.planthome.ShoppingCart;
-import com.example.planthome.ViewPaymentMethod;
-import com.example.planthome.ViewShippingAddress;
 import com.google.android.material.navigation.NavigationView;
 
 public class UserInterface extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {

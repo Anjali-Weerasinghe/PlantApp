@@ -1,8 +1,7 @@
-package com.example.planthome;
+package com.example.planthome.CustomerManagement;
 
 import android.content.Context;
 import android.content.Intent;
-import android.transition.TransitionManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +14,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.planthome.CurrentOnlineUser.CurrentOnlineCustomer;
-import com.example.planthome.Model.CustomerAddressHelperClass;
+import com.example.planthome.CustomerManagement.Model.CustomerAddressHelperClass;
+import com.example.planthome.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
@@ -90,7 +90,7 @@ public class ConfirmShippingAddressAdapter extends RecyclerView.Adapter<ConfirmS
               if(task.isSuccessful()){
 
                   Toast.makeText(context.getApplicationContext(),"Your Shipping Address Added successfully",Toast.LENGTH_SHORT).show();
-                  Intent intent=new Intent(context.getApplicationContext(),PlaceOrder.class);
+                  Intent intent=new Intent(context.getApplicationContext(), PlaceOrder.class);
                   intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                   context.getApplicationContext().startActivity(intent);
               }

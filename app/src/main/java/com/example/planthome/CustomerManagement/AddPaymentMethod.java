@@ -1,4 +1,4 @@
-package com.example.planthome;
+package com.example.planthome.CustomerManagement;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +15,8 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.planthome.CurrentOnlineUser.CurrentOnlineCustomer;
-import com.example.planthome.Model.CustomerPaymentHelperClass;
+import com.example.planthome.CustomerManagement.Model.CustomerPaymentHelperClass;
+import com.example.planthome.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
@@ -81,7 +82,7 @@ public class AddPaymentMethod extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         Toast.makeText(AddPaymentMethod.this,"Your Payment Method Added successfully",Toast.LENGTH_SHORT).show();
-                        Intent intent=new Intent(AddPaymentMethod.this,ViewPaymentMethod.class);
+                        Intent intent=new Intent(AddPaymentMethod.this, ViewPaymentMethod.class);
                         startActivity(intent);
                     }
                 });

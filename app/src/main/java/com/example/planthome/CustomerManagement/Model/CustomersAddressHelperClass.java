@@ -1,4 +1,4 @@
-package com.example.planthome.Model;
+package com.example.planthome.CustomerManagement.Model;
 
 public class CustomersAddressHelperClass {
 

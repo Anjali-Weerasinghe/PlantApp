@@ -1,4 +1,4 @@
-package com.example.planthome;
+package com.example.planthome.CustomerManagement;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,7 +11,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.planthome.CurrentOnlineUser.CurrentOnlineCustomer;
-import com.example.planthome.Model.CustomerAddressHelperClass;
+import com.example.planthome.CustomerManagement.Model.CustomerAddressHelperClass;
+import com.example.planthome.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
@@ -68,7 +69,7 @@ public class AddShippingAddress extends AppCompatActivity {
                         if(task.isSuccessful()){
 
                             Toast.makeText(AddShippingAddress.this,"Your Shipping Address Added successfully",Toast.LENGTH_SHORT).show();
-                            Intent intent=new Intent(AddShippingAddress.this,ViewShippingAddress.class);
+                            Intent intent=new Intent(AddShippingAddress.this, ViewShippingAddress.class);
                             startActivity(intent);
                         }
 

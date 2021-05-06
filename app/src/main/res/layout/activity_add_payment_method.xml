@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:padding="10dp"
         android:orientation="vertical"
-        tools:context=".AddPaymentMethod">
+        tools:context=".CustomerManagement.AddPaymentMethod">
 
         <ImageView
             android:id="@+id/btn_back"

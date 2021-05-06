@@ -1,4 +1,4 @@
-package com.example.planthome;
+package com.example.planthome.CustomerManagement;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,8 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.planthome.CurrentOnlineUser.CurrentOnlineCustomer;
-import com.example.planthome.Model.CustomerAddressHelperClass;
-import com.example.planthome.Model.CustomersAddressHelperClass;
+import com.example.planthome.CustomerManagement.Model.CustomerAddressHelperClass;
+import com.example.planthome.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
@@ -60,7 +60,7 @@ public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.myView
                             public void onComplete(@NonNull Task<Void> task) {
                                 if(task.isSuccessful()){
                                     Toast.makeText(context,"Delete successfully",Toast.LENGTH_SHORT).show();
-                                    Intent intent=new Intent(context.getApplicationContext(),ViewShippingAddress.class);
+                                    Intent intent=new Intent(context.getApplicationContext(), ViewShippingAddress.class);
                                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                     context.getApplicationContext().startActivity(intent);
 

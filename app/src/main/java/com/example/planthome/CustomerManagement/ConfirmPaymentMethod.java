@@ -10,10 +10,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.example.planthome.ConfirmPaymentAdapter;
 import com.example.planthome.CurrentOnlineUser.CurrentOnlineCustomer;
-import com.example.planthome.Model.CustomerPaymentHelperClass;
-import com.example.planthome.PlaceOrder;
+import com.example.planthome.CustomerManagement.Model.CustomerPaymentHelperClass;
 import com.example.planthome.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

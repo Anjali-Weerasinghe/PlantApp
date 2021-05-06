@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#ECF1EB"
 
-    tools:context=".ShoppingCart">
+    tools:context=".CustomerManagement.ShoppingCart">
 
 
     <TextView
@@ -368,7 +368,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/checkout"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginBottom="80dp"

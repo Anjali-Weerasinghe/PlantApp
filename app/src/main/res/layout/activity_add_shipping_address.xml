@@ -13,7 +13,7 @@
         android:background="#ECF1EB"
         android:padding="10dp"
         android:orientation="vertical"
-        tools:context=".AddShippingAddress">
+        tools:context=".CustomerManagement.AddShippingAddress">
 
         <ImageView
             android:id="@+id/btn_back"
