@@ -2,61 +2,57 @@ package com.example.planthome.Model;
 
 public class CustomerHelperClass {
 
-    String name,nic,mobile,email,password;
+    private String Name, Nic, Mobile, Email, Password;
 
     public CustomerHelperClass() {
 
     }
 
     public CustomerHelperClass(String name, String nic, String mobile, String email, String password) {
-        this.name = name;
-        this.nic = nic;
-        this.mobile = mobile;
-        this.email = email;
-        this.password = password;
-
+        Name = name;
+        Nic = nic;
+        Mobile = mobile;
+        Email = email;
+        Password = password;
     }
 
     public String getName() {
-        return name;
+        return Name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        Name = name;
     }
 
     public String getNic() {
-        return nic;
+        return Nic;
     }
 
     public void setNic(String nic) {
-        this.nic = nic;
+        Nic = nic;
     }
 
     public String getMobile() {
-        return mobile;
+        return Mobile;
     }
 
     public void setMobile(String mobile) {
-        this.mobile = mobile;
+        Mobile = mobile;
     }
 
     public String getEmail() {
-        return email;
+        return Email;
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        Email = email;
     }
 
     public String getPassword() {
-        return password;
+        return Password;
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        Password = password;
     }
-
-
 }
-

@@ -1,8 +1,11 @@
 package com.example.planthome.Model;
 
-public class CustomerAddressHelperClass {
+
+
+public class CustomerAddressHelperClass{
 
     String nic,no,address1,address2,city,country,postalCode;
+
 
 
     public CustomerAddressHelperClass() {
