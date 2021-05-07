@@ -103,7 +103,9 @@
     <string name="display_update_plant_price" />
     <string name="update_plant_image">Update Plant Image</string>
     <string name="update_button">Update</string>
+    <string name="textUploadPlantimage">Upload Plant Image</string>
     <string-array name="typebar">
+        <item>Select plant type</item>
         <item>Indoor Plants</item>
         <item>Fruit Plants</item>
         <item> Flower Plants</item>
