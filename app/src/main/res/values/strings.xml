@@ -75,4 +75,38 @@
     <string name="card_no">Card No</string>
     <string name="expiry_date">Expiry Date</string>
     <string name="cvc">CVC</string>
+    <string name="add_plant_banner">Add  New Plants!</string>
+    <string name="add_plant_name">Plant Name</string>
+    <string name="enter_new_plant_name">Enter plant name</string>
+    <string name="add_plant_type">Plant Type</string>
+    <string name="add_plant_price">Plant Price</string>
+    <string name="enter_plant_price">Enter Plant Price</string>
+    <string name="add_button">Add</string>
+    <string name="delete_plant_banner">Delete Plant</string>
+    <string name="deelete_plant_item_number">Enter Plant Item Number</string>
+    <string name="display_delete_item_number" />
+    <string name="delete_plant_name">Plant Name</string>
+    <string name="display_delete_plant_name" />
+    <string name="delete_plant_type">Plant Type</string>
+    <string name="display_delete_plant_type" />
+    <string name="delete_plant_price">Plant Price</string>
+    <string name="display_delete_plant_price" />
+    <string name="delete_button">Delete</string>
+    <string name="update_plant_banner">Update Plants!</string>
+    <string name="update_plant_item_number">Update Plant Item Number</string>
+    <string name="display_update_item_number" />
+    <string name="update_plant_name">Plant Name</string>
+    <string name="dispaly_update_plant_name" />
+    <string name="update_plant_type">Plant Type</string>
+    <string name="display_update_plant_type" />
+    <string name="update_plant_price">Plant Price</string>
+    <string name="display_update_plant_price" />
+    <string name="update_plant_image">Update Plant Image</string>
+    <string name="update_button">Update</string>
+    <string-array name="typebar">
+        <item>Indoor Plants</item>
+        <item>Fruit Plants</item>
+        <item> Flower Plants</item>
+
+    </string-array>
 </resources>
