@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#78D4EF"
-    android:backgroundTint="#B0E5EC"
+    android:background="#ECF1EB"
+    android:backgroundTint="#ECF1EB"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -85,7 +85,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginLeft="10sp"
-                android:layout_marginTop="0sp"
+                android:layout_marginTop="20sp"
 
                 android:text="@string/add_plant_type"
                 android:textAlignment="center"
@@ -115,7 +115,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginLeft="10sp"
-                android:layout_marginTop="10sp"
+                android:layout_marginTop="20sp"
                 android:layout_marginBottom="10sp"
                 android:text="@string/add_plant_price"
                 android:textAlignment="center"
@@ -148,9 +148,9 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginLeft="10sp"
-                android:layout_marginTop="20sp"
+                android:layout_marginTop="50sp"
                 android:layout_marginBottom="10sp"
-                android:text="@string/enter_plant_price"
+                android:text="@string/textUploadPlantimage"
                 android:textAlignment="center"
                 android:textColor="#000000"
 
