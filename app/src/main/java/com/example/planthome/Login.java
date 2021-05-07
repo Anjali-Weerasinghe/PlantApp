@@ -65,7 +65,7 @@ public class Login extends AppCompatActivity {
         startActivity(intent3);
     }
     public void openUserInterface(){
-        Intent intent5=new Intent(this,UserInterface.class);
+        Intent intent5=new Intent(this,PlantManagerUserInterface.class);
         startActivity(intent5);
     }
     public void forgotPassword(){
