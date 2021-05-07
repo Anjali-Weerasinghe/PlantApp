@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -30,6 +31,8 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.util.HashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class AddPlant extends AppCompatActivity {
     private static final int REQUEST_CODE_ADD_IMAGE =101;
@@ -98,30 +101,47 @@ public class AddPlant extends AppCompatActivity {
             public void onClick(View v) {
                 final String plantName=  addPlantName.getText().toString().trim();
                 final String plantType= addMenuType.getSelectedItem().toString();
-                final Double plantPrice= Double.parseDouble(addPlantPrice.getText().toString());
+                String ptnPrice =addPlantPrice.getText().toString();
+                double ptnPriceValue=0;
+                if(!ptnPrice.isEmpty())
+                    try {
+                        ptnPriceValue = Double.parseDouble(ptnPrice);
+                    }catch (Exception e){
+                        e.printStackTrace();
+                    }
+
 //               if( plantName!=null && plantType!=null && plantPrice!=null && isImageAdded!=false ){
 //                   addPlant(plantName,plantType,plantPrice);
 //               }
+                Pattern pattern = Pattern.compile("[^a-zA-Z0-9]");
+                Matcher matcher = pattern.matcher(plantName);
+                boolean isStringContainsSpecialCharacter = matcher.find();
 
-                if(TextUtils.isEmpty(plantName))
+                //if(TextUtils.isEmpty(plantName))
+                if(isStringContainsSpecialCharacter)
                 {
-                    Toast.makeText(AddPlant.this, "Please Enter Plant Name...", Toast.LENGTH_SHORT).show();
+                    addPlantName.setError("Please Enter Plant Name...");
+                    return;
                 }
-                else if(TextUtils.isEmpty(plantType))
+                if(plantType.equals("Select plant type"))
                 {
                     Toast.makeText(AddPlant.this, "Please Select Plant Type...", Toast.LENGTH_SHORT).show();
+                    return;
                 }
-                else if(plantPrice==null)
+                 if(ptnPriceValue == 0)
                 {
-                    Toast.makeText(AddPlant.this, "Please Enter Plant Price....", Toast.LENGTH_SHORT).show();
-                }
-                else if(isImageAdded==false)
-                {
-                    Toast.makeText(AddPlant.this, "Please Enter Planting Method....", Toast.LENGTH_SHORT).show();
-                }else{
-                addPlant(plantName,plantType,plantPrice);
-              }
+                    addPlantPrice.setError("Enter a price");
+                    return;
 
+                }
+                 if(isImageAdded==false)
+                {
+                    Toast.makeText(AddPlant.this, "Please select image....", Toast.LENGTH_SHORT).show();
+                    return;
+
+                }
+
+                addPlant(plantName,plantType,ptnPriceValue);
 
             }
         });
