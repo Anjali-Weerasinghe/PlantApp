@@ -58,7 +58,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">close navigation drawer</string>
     <string name="communicate">Communicate</string>
-    <string name="shipping_address">Shipping Address</string>
+    <!--    <string name="shipping_address">Shipping Address</string>-->
     <string name="payment_method">Payment Method</string>
     <string name="change_password">Change Password</string>
     <string name="logout">Logout</string>
@@ -75,6 +75,14 @@
     <string name="card_no">Card No</string>
     <string name="expiry_date">Expiry Date</string>
     <string name="cvc">CVC</string>
+    <string name="shipping_address">Shipping Address</string>
+
+    <string name="remove_item">Remove item</string>
+    <string name="order_confirmation">Order Confirmation</string>
+    <string name="select_shipping_address">SELECT SHIPPING ADDRESS</string>
+    <string name="select_payment_method">SELECT PAYMENT METHOD</string>
+    <string name="selectaddress">select</string>
+
     <string name="full_name">Full Name</string>
     <string name="nic">NIC</string>
     <string name="mobile">Mobile</string>
@@ -87,6 +95,9 @@
         <item>Fertilizer Manager</item>
     </string-array>
     <string name="Pots">Pots</string>
+    <string name="Home">home</string>
+    <string name="Message">message</string>
+    <string name="Login">login</string>
     <string name="Fertilizer">Fertilizer</string>
     <string name="Concrete">Concrete</string>
     <string name="Price01">Rs.450.00</string>
@@ -100,14 +111,14 @@
     <string name="clay">clay</string>
     <string name="foam">Foam</string>
     <string name="selfwatering">Self Watering</string>
-    <string name="mineralfertilizer">Mineral Fertilizer</string>
-    <string name="nitrogenfertilizer">Nitrogen Fertilizer</string>
-    <string name="phosphorus">Phosphorus Fertilizer</string>
-    <string name="potassiumfertilizer">Potassium Fertilizer</string>
+    <string name="mineralfertilizer">Mineral </string>
+    <string name="nitrogenfertilizer">Nitrogen </string>
+    <string name="phosphorus">Phosphorus </string>
+    <string name="potassiumfertilizer">Potassium </string>
     <string name="cms">Calsium, Magnesium and Sulfer</string>
     <string name="micro" />
-    <string name="micro1">Micronutrient Fertilizer</string>
-    <string name="organic">Organic Fertilizer</string>
+    <string name="micro1">Micronutrient </string>
+    <string name="organic">Organic </string>
     <string name="plaingreen">Plain Green</string>
     <string name="price05">Rs.1200.00</string>
     <string name="ashen">Ashen Glazed</string>
@@ -138,10 +149,10 @@
     <string name="category">Category</string>
     <string name="Price">Price</string>
     <string name="uploadphoto">Upload a Photo</string>
-    <string name="addpot">ADD POT</string>
+    <string name="addpot">Add Pot</string>
     <string name="addnewfertilizer">Add New Fertilizer</string>
     <string name="organicfertilizer">Organic Fertilizer</string>
-    <string name="addertilizer">ADD FERTILIZER</string>
+    <string name="addertilizer">Add Fertilizer</string>
     <string name="updatedeletepots">Updare $ Delete Pots</string>
     <string name="updateanddeletepots"><![CDATA[Update & Delete Pots]]></string>
     <string name="itemcode1">Item Code</string>
@@ -175,5 +186,38 @@
     <string name="glazedCeramic">Glazed Ceramic</string>
     <string name="register">Register</string>
     <string name="Profile">Profile</string>
+    <string-array name="categories">
+        <item>Clay</item>
+        <item>Metal</item>
+        <item>Concrete</item>
+        <item>Ceramic</item>
+        <item>Fiber</item>
+        <item>Foam</item>
+
+    </string-array>
+
+    <string-array name="categories2">
+        <item>Nitrogen</item>
+        <item>Phosphorus</item>
+        <item>Potassium</item>
+        <item>CMS</item>
+        <item>Micronutrient</item>
+    </string-array>
+    <string name="title_activity_admin_profile_navigation">AdminProfileNavigation</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="admin_id_name">Admin  ID: A20000001B</string>
+    <string name="title_activity_help">help</string>
+    <string name="title_activity_profile_navigation">ProfileNavigation</string>
+    <string name="title_activity_admin_navigation_profile">AdminNavigationProfile</string>
+    <string name="title_activity_new_update_delete_pot_and_fertilizer">
+        NewUpdateDeletePotAndFertilizer
+    </string>
 
 </resources>

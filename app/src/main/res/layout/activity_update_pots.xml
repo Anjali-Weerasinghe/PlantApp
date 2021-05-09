@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:backgroundTint="#E7FFE5"
+    app:cardElevation="15dp"
+    tools:context=".UpdatePots">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:id="@+id/item_image_update"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/item_category"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="2dp"/>
+        <EditText
+            android:id="@+id/item_name_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_image_update"
+            android:hint="Item Name"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:padding="12dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/boader"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/item_price_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_name_update"
+            android:hint="Item Price"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:padding="12dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/boader"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/item_description_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_price_update"
+            android:hint="Description"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:padding="12dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/boader"
+            android:textColor="@color/black"/>
+
+        <Spinner
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.219"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_below="@+id/item_description_update"
+                android:id="@+id/spinner_update"
+                android:background="@drawable/boader"
+                android:layout_width="380dp"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:padding="12dp"
+                android:layout_margin="5dp"
+                 />
+        <Button
+            android:id="@+id/item_update_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_update"
+            android:text="@string/update"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:padding="12dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/boader"
+            android:backgroundTint="@color/btngreen"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/item_delete_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_update_btn"
+            android:text="@string/delete"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:padding="12dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/boader"
+            android:backgroundTint="@color/btngreen"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

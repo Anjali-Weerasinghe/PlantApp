@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.planthome">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.planthome" >
 
     <application
         android:allowBackup="true"
@@ -8,20 +9,33 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PlantHome">
-        <activity android:name=".FertilizerManager"></activity>
-        <activity android:name=".TutorialManager" />
+        android:theme="@style/Theme.PlantHome"
+        tools:replace="android:theme" >
+
+        <activity android:name=".UpdateDeletePotsAndFertilizer" />
+        <activity android:name=".UpdateFertilizer" />
+        <activity android:name=".UpdatePots" />
+        <activity android:name=".AdminProfileNavigation" />
+        <activity android:name=".ItemDetails" />
+        <activity android:name=".ItemViwer" />
         <activity android:name=".PlantManager" />
         <activity
             android:name=".AdminLogin"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" /> <!-- <activity -->
+        <!-- android:name=".ViewShippingAddress" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar" /> -->
         <activity
-            android:name=".ViewShippingAddress"
+            android:name=".AddPaymentMethod"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".AddPaymentMethod"
+            android:name=".addnewpot"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".addnewfertilizer"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
@@ -59,7 +73,7 @@
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
