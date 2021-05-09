@@ -104,6 +104,7 @@
     <string name="update_plant_image">Update Plant Image</string>
     <string name="update_button">Update</string>
     <string name="textUploadPlantimage">Upload Plant Image</string>
+    <string name="cus_home_banner">Welcome Plants</string>
     <string-array name="typebar">
         <item>Select plant type</item>
         <item>Indoor Plants</item>
