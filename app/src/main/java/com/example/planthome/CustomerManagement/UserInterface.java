@@ -9,6 +9,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.example.planthome.Home;
 import com.example.planthome.R;
@@ -18,7 +20,7 @@ public class UserInterface extends AppCompatActivity implements NavigationView.O
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
-
+    ImageView plant;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +46,14 @@ public class UserInterface extends AppCompatActivity implements NavigationView.O
 //       Intent intent=getIntent();
 //       String userName=intent.getStringExtra("username");
 
-
+        plant=findViewById(R.id.imageView3);
+        plant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2=new Intent(UserInterface.this, ViewPlants.class);
+                startActivity(intent2);
+            }
+        });
 
     }
 
@@ -64,7 +73,7 @@ public class UserInterface extends AppCompatActivity implements NavigationView.O
                 startActivity(intent1);
                 break;
             case R.id.side_nav_cart:
-                Intent intent2=new Intent(UserInterface.this, ShoppingCart.class);
+                Intent intent2=new Intent(UserInterface.this,ShoppingCart.class);
                 startActivity(intent2);
                 break;
             case R.id.side_nav_payment:

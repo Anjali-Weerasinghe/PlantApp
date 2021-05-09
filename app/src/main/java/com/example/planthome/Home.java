@@ -6,11 +6,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.planthome.PlantsManagement.Customer_view_plant_item;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Home extends AppCompatActivity {
+
+    ImageView plant;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +39,15 @@ public class Home extends AppCompatActivity {
                         break;
                 }
                 return false;
+            }
+        });
+
+        plant=findViewById(R.id.imageView3);
+        plant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2=new Intent(Home.this, Customer_view_plant_item.class);
+                startActivity(intent2);
             }
         });
     }
