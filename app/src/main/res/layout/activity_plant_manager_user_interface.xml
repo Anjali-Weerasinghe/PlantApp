@@ -30,20 +30,21 @@
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/plant_search"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/input_plant_search"
         android:drawableRight="@drawable/ic_search"
-        android:hint="Search plant  ..."
-        android:paddingLeft="20dp"
+        android:hint="Search plant  Type..."
+        android:paddingLeft="40dp"
         android:paddingTop="8dp"
         android:paddingRight="10dp"
         android:paddingBottom="8dp"
@@ -51,20 +52,53 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></EditText>
 
+    <ImageView
+        android:id="@+id/single_plant_back_img"
+        android:layout_below="@+id/cus_plant_search"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/plant_admin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="355dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:textAlignment="center"
+        android:textColor="#22a345"
+        android:typeface="serif"
+        android:textSize="28sp"
+        android:text="Welcome Plant Admin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
 
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/plant_recycleview"
-            android:layout_width="407dp"
-            android:layout_height="554dp"
-            android:layout_below="@+id/plant_search"
-            android:layout_marginTop="80dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/plant_recycleview"
+        android:layout_width="380dp"
+        android:layout_height="640dp"
+        android:layout_below="@+id/plant_search"
+        android:layout_marginTop="300dp"
+
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
-        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -74,14 +108,14 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_margin="25dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="330dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="44dp"
         android:background="#98fc5d"
         android:backgroundTint="#379524"
+        android:paddingBottom="40dp"
         android:src="@drawable/ic_add"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        >
+        app:layout_constraintEnd_toEndOf="parent">
 
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
