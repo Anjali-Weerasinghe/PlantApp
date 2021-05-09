@@ -96,6 +96,7 @@ public class AddPlant extends AppCompatActivity {
             }
         });
 
+        //validation
         addPlantButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -109,18 +110,13 @@ public class AddPlant extends AppCompatActivity {
                     }catch (Exception e){
                         e.printStackTrace();
                     }
-
-//               if( plantName!=null && plantType!=null && plantPrice!=null && isImageAdded!=false ){
-//                   addPlant(plantName,plantType,plantPrice);
-//               }
-                Pattern pattern = Pattern.compile("[^a-zA-Z0-9]");
+                Pattern pattern = Pattern.compile("[^a-zA-Z] ");
                 Matcher matcher = pattern.matcher(plantName);
                 boolean isStringContainsSpecialCharacter = matcher.find();
 
-                //if(TextUtils.isEmpty(plantName))
-                if(isStringContainsSpecialCharacter)
+                if(isStringContainsSpecialCharacter || TextUtils.isEmpty(plantName))
                 {
-                    addPlantName.setError("Please Enter Plant Name...");
+                    addPlantName.setError("Please Enter valid Plant Name...");
                     return;
                 }
                 if(plantType.equals("Select plant type"))
@@ -132,17 +128,13 @@ public class AddPlant extends AppCompatActivity {
                 {
                     addPlantPrice.setError("Enter a price");
                     return;
-
                 }
                  if(isImageAdded==false)
                 {
                     Toast.makeText(AddPlant.this, "Please select image....", Toast.LENGTH_SHORT).show();
                     return;
-
                 }
-
                 addPlant(plantName,plantType,ptnPriceValue);
-
             }
         });
 
