@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchTutesActivity">
+
+    <RelativeLayout
+        android:id="@+id/searc3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/serchTute"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:hint="Tute Name"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@drawable/tute_search_style"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+
+
+            android:textColorHint="@android:color/background_dark" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="search"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:padding="9dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/tute_button_search"
+
+            android:layout_toRightOf="@+id/serchTute" />
+
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/planting"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searc3">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_floating_btntute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="44dp"
+        android:background="#98fc5d"
+        android:backgroundTint="#379524"
+        android:paddingBottom="40dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+
+</RelativeLayout>
