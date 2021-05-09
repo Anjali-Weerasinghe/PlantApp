@@ -75,4 +75,40 @@
     <string name="card_no">Card No</string>
     <string name="expiry_date">Expiry Date</string>
     <string name="cvc">CVC</string>
+    <string name="add_tute_type">Tute Type</string>
+    <string name="Add_tutorials">Add new tutorials</string>
+    <string name="Tute_plant_name">Plant Name</string>
+    <string name="AddTute_nameView">Name of the plant:</string>
+    <string name="AddTute_plant_method">Add plant method:</string>
+    <string name="AddTute_methodBox">Enter Planting methods and other details</string>
+    <string name="Addtute_image">Add Image:</string>
+    <string name="Addtute_button">ADD</string>
+    <string name="UpdateTute_title">Update Tutorials</string>
+    <string name="UpdateTute_id">Enter the plant id</string>
+    <string name="UpdateTute_IdBox" />
+    <string name="UpdateTutorial_plantId">Enter the Id</string>
+    <string name="UpdateTute_plnatType">Plant Type:</string>
+    <string name="UpdateTuite_button">Update</string>
+    <string name="UpdateTute_image">Update Image:</string>
+    <string name="UpdateTute_plantName">Rose</string>
+    <string name="UpdateTutprial_pName">Plant Name:</string>
+    <string name="Update_tutePlantBoxname">Rose</string>
+    <string name="UpdateTute_Methods">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</string>
+    <string name="UpdateTutorial_method">DEscription and Methods:</string>
+    <string name="UpdateTute_descriptionBox">zxasfadsssdgfsgdfafghgagggadgg g dfsagdfgadggg</string>
+    <string name="DeleteTute_Title">Delete Tutorials</string>
+    <string name="DeleteTute_Type">Plant Type:</string>
+    <string name="DeleteTutorial_Id">Nter Plant Id:</string>
+    <string name="DeleteTute_Typw">Plant Type:</string>
+    <string name="DeletTute_Name">Plant Name:</string>
+    <string name="DeleteTUTE_dESCR">Tutorial Description:</string>
+    <string name="DeleteTute_button">Delete</string>
+    <string name="DeleteImage_tute">Images:</string>
+    <string name="DeleteTute_id">Enter Plant Id:</string>
+    <string-array name="barr">
+        <item>Flower plant</item>
+        <item>Fruit plant</item>
+        <item>Indoor plant</item>
+        <item>Vegetable plant</item>
+    </string-array>
 </resources>
