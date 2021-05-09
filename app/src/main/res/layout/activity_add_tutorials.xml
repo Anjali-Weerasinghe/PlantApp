@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF1EB"
+    android:backgroundTint="#ECF1EB"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="10sp"
+        tools:ignore="ScrollViewSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ECF1EB"
+            android:backgroundTint="#ECF1EB"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="382dp"
+                android:layout_height="65dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="0sp"
+                android:layout_marginBottom="20sp"
+                android:text="@string/Add_tutorials"
+                android:textAlignment="center"
+                android:textColor="#5E9C1F"
+
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewAddTuteImage"
+                android:layout_width="382dp"
+                android:layout_height="33dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="0sp"
+                android:layout_marginBottom="10sp"
+                android:text="@string/Addtute_image"
+                android:textAlignment="center"
+                android:textColor="#000000"
+
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/textImageAdd"
+                android:layout_width="363dp"
+                android:layout_height="235dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="50sp"
+                android:layout_marginBottom="10dp"
+                android:cropToPadding="false"
+                android:src="@drawable/tute_add"></ImageView>
+
+            <TextView
+                android:id="@+id/textViewAddTuteType"
+                android:layout_width="382dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="0sp"
+                android:layout_marginBottom="0sp"
+                android:text="@string/add_tute_type"
+                android:textAlignment="center"
+                android:textColor="#000000"
+
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerAddTuteType"
+                android:layout_width="300sp"
+                android:layout_height="41dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50sp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#C2E6C4"
+                android:ems="10"
+                android:entries="@array/barr"
+                android:textAlignment="center"></Spinner>
+
+
+            <TextView
+                android:id="@+id/textViewAddtuteName"
+                android:layout_width="382dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="0sp"
+                android:layout_marginBottom="10sp"
+                android:text="@string/Tute_plant_name"
+                android:textAlignment="center"
+                android:textColor="#000000"
+
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTuteName"
+
+                android:layout_width="300sp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/select_editTuteType"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50sp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:hint="@string/AddTute_nameView"
+                android:inputType="text"
+                android:textAlignment="center">
+
+            </EditText>
+
+
+            <TextView
+                android:id="@+id/textViewAddTuteMethod"
+                android:layout_width="382dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="0sp"
+                android:layout_marginBottom="10sp"
+                android:text="@string/AddTute_plant_method"
+                android:textAlignment="center"
+                android:textColor="#000000"
+
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/textViewAddTuteMethodBox"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="300sp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+
+                android:layout_marginLeft="50sp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:hint="@string/AddTute_methodBox"
+                android:inputType="textMultiLine"
+                android:lines="30"
+                android:textAlignment="center"
+
+                ></EditText>
+
+
+            <Button
+                android:id="@+id/button_Addtute"
+
+
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="40sp"
+                android:background="@drawable/tute_button_search"
+
+                android:shadowColor="#090808"
+                android:text="@string/Addtute_button"
+                app:strokeColor="#5CB65F" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>
