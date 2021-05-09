@@ -1,10 +1,13 @@
 package com.example.planthome;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -69,10 +72,32 @@ public class PlantItemView extends AppCompatActivity {
 
             }
         });
+
+
+
         plant_delete_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    dataReference.removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
+                AlertDialog diaBox = AskDeleteOption();
+                diaBox.show();
+
+            }
+        });
+    }
+    private AlertDialog AskDeleteOption()
+    {
+        AlertDialog DeleteDialogBox = new AlertDialog.Builder(this)
+                // set message, title, and icon
+                .setTitle("Delete")
+               .setMessage("Do you want to Delete")
+
+                .setIcon(R.drawable.delete)
+
+                .setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        //your deleting code
+                        dataReference.removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
                         public void onSuccess(Void aVoid) {
                                 storageReference.delete().addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -83,7 +108,20 @@ public class PlantItemView extends AppCompatActivity {
                                 });
                         }
                     });
-            }
-        });
+                        dialog.dismiss();
+                    }
+
+                })
+                .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        dialog.dismiss();
+
+                    }
+                })
+                .create();
+
+        return DeleteDialogBox;
     }
+
 }
