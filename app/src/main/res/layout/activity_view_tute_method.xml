@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:cardElevation="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tuteDescriptionMethodName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tute Name"
+                android:textAlignment="center"
+                android:textColor="@color/teal_700"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/plantTuteMethod_Image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/tuteName"
+                android:layout_marginTop="35dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tuteMethod_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/plantTuteMethod_Image"
+                android:layout_marginTop="2dp"
+                android:text="Planting Method"
+                android:textAlignment="center"
+                android:textColor="@color/teal_700"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tuteMethodDescription_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tuteMethod_view"
+                android:layout_marginTop="2dp"
+                android:text="Planting Method"
+
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</ScrollView>
