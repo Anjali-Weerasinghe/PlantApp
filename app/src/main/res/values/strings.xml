@@ -82,9 +82,119 @@
     <string name="_24">24</string>
     <string name="login_as_admin">Login as Admin</string>
     <string name="adminloginText2">Let\'s Login as Admin</string>
+    <string name="remove_item">Remove</string>
+    <string name="order_confirmation">Order Confirmation</string>
+    <string name="select_shipping_address">SELECT SHIPPING ADDRESS</string>
+    <string name="select_payment_method">SELECT PAYMENT METHOD</string>
+    <string name="selectaddress">select</string>
+    <string name="select_payment">select</string>
+    <string name="confirm_payment_method">Confirm Payment Method</string>
+    <string name="my_orders">My Orders</string>
+
     <string-array name="userType">
         <item>Plant Manager</item>
         <item>Tutorial Manager</item>
         <item>Fertilizer Manager</item>
     </string-array>
+    <string-array name="month">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="year">
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+
+
+    </string-array>
+    <string name="add_plant_banner">Add  New Plants!</string>
+    <string name="add_plant_name">Plant Name</string>
+    <string name="enter_new_plant_name">Enter plant name</string>
+    <string name="add_plant_type">Plant Type</string>
+    <string name="add_plant_price">Plant Price</string>
+    <string name="enter_plant_price">Enter Plant Price</string>
+    <string name="add_button">Add</string>
+    <string name="delete_plant_banner">Delete Plant</string>
+    <string name="deelete_plant_item_number">Enter Plant Item Number</string>
+    <string name="display_delete_item_number" />
+    <string name="delete_plant_name">Plant Name</string>
+    <string name="display_delete_plant_name" />
+    <string name="delete_plant_type">Plant Type</string>
+    <string name="display_delete_plant_type" />
+    <string name="delete_plant_price">Plant Price</string>
+    <string name="display_delete_plant_price" />
+    <string name="delete_button">Delete</string>
+    <string name="update_plant_banner">Update Plants!</string>
+    <string name="update_plant_item_number">Update Plant Item Number</string>
+    <string name="display_update_item_number" />
+    <string name="update_plant_name">Plant Name</string>
+    <string name="dispaly_update_plant_name" />
+    <string name="update_plant_type">Plant Type</string>
+    <string name="display_update_plant_type" />
+    <string name="update_plant_price">Plant Price</string>
+    <string name="display_update_plant_price" />
+    <string name="update_plant_image">Update Plant Image</string>
+    <string name="update_button">Update</string>
+    <string name="textUploadPlantimage">Upload Plant Image</string>
+    <string-array name="typebar">
+        <item>Indoor Plants</item>
+        <item>Fruit Plants</item>
+        <item> Flower Plants</item>
+
+    </string-array>
+
+    <string name="add_tute_type">Tute Type</string>
+    <string name="Add_tutorials">Add new tutorials</string>
+    <string name="Tute_plant_name">Plant Name</string>
+    <string name="AddTute_nameView">Name of the plant:</string>
+    <string name="AddTute_plant_method">Add plant method:</string>
+    <string name="AddTute_methodBox">Enter Planting methods and other details</string>
+    <string name="Addtute_image">Add Image:</string>
+    <string name="Addtute_button">ADD</string>
+    <string name="UpdateTute_title">Update Tutorials</string>
+    <string name="UpdateTute_id">Enter the plant id</string>
+    <string name="UpdateTute_IdBox" />
+    <string name="UpdateTutorial_plantId">Enter the Id</string>
+    <string name="UpdateTute_plnatType">Plant Type:</string>
+    <string name="UpdateTuite_button">Update</string>
+    <string name="UpdateTute_image">Update Image:</string>
+    <string name="UpdateTute_plantName">Rose</string>
+    <string name="UpdateTutprial_pName">Plant Name:</string>
+    <string name="Update_tutePlantBoxname">Rose</string>
+    <string name="UpdateTute_Methods">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</string>
+    <string name="UpdateTutorial_method">DEscription and Methods:</string>
+    <string name="UpdateTute_descriptionBox">zxasfadsssdgfsgdfafghgagggadgg g dfsagdfgadggg</string>
+    <string name="DeleteTute_Title">Delete Tutorials</string>
+    <string name="DeleteTute_Type">Plant Type:</string>
+    <string name="DeleteTutorial_Id">Nter Plant Id:</string>
+    <string name="DeleteTute_Typw">Plant Type:</string>
+    <string name="DeletTute_Name">Plant Name:</string>
+    <string name="DeleteTUTE_dESCR">Tutorial Description:</string>
+    <string name="DeleteTute_button">Delete</string>
+    <string name="DeleteImage_tute">Images:</string>
+    <string name="DeleteTute_id">Enter Plant Id:</string>
+    <string-array name="barr">
+        <item>Flower plant</item>
+        <item>Fruit plant</item>
+        <item>Indoor plant</item>
+        <item>Vegetable plant</item>
+    </string-array>
+
 </resources>
