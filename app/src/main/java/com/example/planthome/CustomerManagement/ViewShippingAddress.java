@@ -40,7 +40,7 @@ public class ViewShippingAddress extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_shipping_address);
 
-        String nic=getIntent().getStringExtra("userName");
+
         String Nic= CurrentOnlineCustomer.currentOnlineCustomer.getNic();
         System.out.println("current user nic="+Nic);
         recyclerView=findViewById(R.id.recyclerView1);
