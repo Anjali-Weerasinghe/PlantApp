@@ -9,57 +9,70 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PlantHome">
-        <activity android:name=".FertilizerManager"></activity>
+        <activity android:name=".TutorialManagement.ViewTuteMethodActivity"></activity>
+        <activity android:name=".TutorialManagement.Update_Tutorials" />
+        <activity android:name=".TutorialManagement.SearchTutesActivity" />
+        <activity android:name=".TutorialManagement.ManageTutorials" />
+        <activity android:name=".TutorialManagement.AddTutorials" />
+        <activity android:name=".test" />
+        <activity android:name=".CustomerManagement.Customer_one_plant_item_view" />
+        <activity android:name=".CustomerManagement.ViewPlants" />
+        <activity android:name=".PlantsManagement.Customer_view_plant_item" />
+        <activity android:name=".PlantsManagement.PlantItemView" />
+        <activity android:name=".PlantsManagement.sampleAddPlant" />
+        <activity android:name=".PlantsManagement.PlantManagerUserInterface" />
+        <activity android:name=".PlantsManagement.AddPlant" />
+        <activity
+            android:name=".CustomerManagement.ConfirmPaymentMethod"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomerManagement.ConfirmShippingAddress"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomerManagement.PlaceOrder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomerManagement.ViewPaymentMethod"
+            android:screenOrientation="portrait" />
+        <activity android:name=".FertilizerManager" />
         <activity android:name=".TutorialManager" />
         <activity android:name=".PlantManager" />
         <activity
             android:name=".AdminLogin"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".ViewShippingAddress"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:name=".CustomerManagement.ViewShippingAddress"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".AddPaymentMethod"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:name=".CustomerManagement.AddPaymentMethod"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".AddShippingAddress"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:name=".CustomerManagement.AddShippingAddress"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".ShoppingCart"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:name=".CustomerManagement.ShoppingCart"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".ChangePassword"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:name=".CustomerManagement.ChangePassword"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".UserInterface"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:name=".CustomerManagement.UserInterface"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Register"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Message"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Home"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Login"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
