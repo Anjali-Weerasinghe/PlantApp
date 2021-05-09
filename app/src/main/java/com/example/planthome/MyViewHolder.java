@@ -20,7 +20,9 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
         textViewPlantName=itemView.findViewById(R.id.text_plant_name);
         textViewPlantType=itemView.findViewById(R.id.text_plant_type);
         textViewPlantPrice=itemView.findViewById(R.id.text_plant_price);
+
         v=itemView;
+
 
 
     }
