@@ -103,7 +103,7 @@ public class PlantManagerUserInterface extends AppCompatActivity implements Navi
             }
         });
     }
-
+//view all plant item
     private void loadData(String data) {
 
         Query query=databaseReference.orderByChild("PlantType").startAt(data).endAt(data+"\uf8ff");
