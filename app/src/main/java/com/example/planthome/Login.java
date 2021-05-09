@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import com.example.planthome.CurrentOnlineUser.CurrentOnlineCustomer;
 import com.example.planthome.CustomerManagement.ChangePassword;
 import com.example.planthome.CustomerManagement.UserInterface;
-import com.example.planthome.Model.Customer;
+import com.example.planthome.CustomerManagement.Model.Customer;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -124,7 +124,7 @@ public class Login extends AppCompatActivity {
 
         final DatabaseReference reference= FirebaseDatabase.getInstance().getReference();
 
-//        Query checkCustomer=reference.orderByChild("nic").equalTo(customerEnteredNIC);
+
 
         reference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -134,17 +134,16 @@ public class Login extends AppCompatActivity {
                     username.setErrorEnabled(false);
 
                     Customer customer=snapshot.child("customer").child(customerEnteredNIC).getValue(Customer.class);
-//                    String passwordFromDB=snapshot.child(customerEnteredNIC).child("password").getValue(String.class);
+
                     if(customer.getNic().equals(customerEnteredNIC)){
                         username.setError(null);
                         username.setErrorEnabled(false);
                         if(customer.getPassword().equals(customerEnteredPassword)){
 
-//                            String usernameFromDB=snapshot.child(customerEnteredNIC).child("nic").getValue(String.class);
+
 
                             Intent intent=new Intent(getApplicationContext(), UserInterface.class);
-//                            intent.putExtra("username",usernameFromDB);
-//                            System.out.println(usernameFromDB);
+
                             CurrentOnlineCustomer.currentOnlineCustomer=customer;
                             startActivity(intent);
 

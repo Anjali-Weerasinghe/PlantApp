@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
 
+import com.example.planthome.PlantsManagement.PlantManagerUserInterface;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -97,7 +98,7 @@ public class AdminLogin extends AppCompatActivity {
 
                             String usernameFromDB=snapshot.child(adminEnteredNIC).child("nic").getValue(String.class);
 
-                            Intent intent=new Intent(getApplicationContext(),PlantManager.class);
+                            Intent intent=new Intent(getApplicationContext(), PlantManagerUserInterface.class);
                             intent.putExtra("username",usernameFromDB);
                             System.out.println(usernameFromDB);
                             startActivity(intent);

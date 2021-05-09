@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#687CB342"
+    android:background="#ECF1EB"
     android:padding="10dp"
     tools:context=".Login"
     android:orientation="vertical">
@@ -60,7 +60,7 @@
             android:layout_marginBottom="20dp"
             android:id="@+id/username"
             android:hint="@string/Username"
-
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             >
 
             <com.google.android.material.textfield.TextInputEditText
@@ -80,15 +80,12 @@
             android:layout_marginBottom="20dp"
             android:hint="@string/password"
             app:passwordToggleEnabled="true"
-
-
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             >
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"/>
-
-
 
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -174,14 +171,15 @@
 
 
     </RelativeLayout>
+
     <Button
         android:id="@+id/login_as_admin"
-        android:layout_width="120dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="240dp"
+        android:layout_width="188dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="200dp"
         android:background="#00000000"
-        android:textColor="#3A78F3"
-        android:text="@string/login_as_admin" />
+        android:text="@string/login_as_admin"
+        android:textColor="#3A78F3" />
 
 </LinearLayout>
 
