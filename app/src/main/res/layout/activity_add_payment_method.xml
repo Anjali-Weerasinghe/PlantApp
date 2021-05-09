@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#687CB342"
+    android:background="#ECF1EB"
     android:layout_height="match_parent">
 
 
@@ -126,21 +126,21 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:id="@+id/cardNo"
-                android:layout_marginBottom="10dp"
-
-                >
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="300dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
+                    android:layout_marginStart="0dp"
+                    android:hint="@string/card_no"
                     android:inputType="number"
-                    android:maxLength="16"
-                    android:hint="@string/card_no" />
+                    android:maxLength="16" />
 
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -173,59 +173,24 @@
                     android:layout_marginStart="100dp"/>
 
 
-<!--                <com.google.android.material.textfield.TextInputLayout-->
-<!--                    android:layout_width="60dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:id="@+id/expiry_date_month"-->
-<!--                    android:layout_alignParentStart="true"-->
-<!--                    android:layout_marginStart="30dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:layout_marginBottom="10dp">-->
-
-<!--                    <com.google.android.material.textfield.TextInputEditText-->
-<!--                        android:layout_width="60dp"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:inputType="number"-->
-<!--                        android:maxLength="2"-->
-<!--                        android:hint="Month" />-->
-
-
-<!--                </com.google.android.material.textfield.TextInputLayout>-->
-<!--                <com.google.android.material.textfield.TextInputLayout-->
-<!--                    android:layout_width="60dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:id="@+id/expiry_date_year"-->
-<!--                    android:layout_alignParentStart="true"-->
-<!--                    android:layout_marginStart="100dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:layout_marginBottom="10dp">-->
-
-<!--                    <com.google.android.material.textfield.TextInputEditText-->
-<!--                        android:layout_width="60dp"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:inputType="number"-->
-<!--                        android:maxLength="2"-->
-<!--                        android:hint="Year" />-->
-
-
-<!--                </com.google.android.material.textfield.TextInputLayout>-->
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="99dp"
+                    android:id="@+id/cvc"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="116dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:id="@+id/cvc"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="60dp"
+                    android:layout_marginEnd="44dp"
                     android:layout_marginBottom="10dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
+                        android:hint="@string/cvc"
                         android:inputType="number"
-                        android:maxLength="3"
-                        android:hint="@string/cvc" />
+                        android:maxLength="3" />
 
 
                 </com.google.android.material.textfield.TextInputLayout>
