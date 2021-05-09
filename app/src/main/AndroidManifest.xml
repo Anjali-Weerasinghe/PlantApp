@@ -9,7 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PlantHome">
-        <activity android:name=".AddPaymentMethod"></activity>
+        <activity android:name=".SearchTutesActivity"></activity>
+        <activity android:name=".ManageTutorials" />
+        <activity android:name=".ViewTuteMethodActivity" />
+        <activity android:name=".Delete_Tutotorials" />
+        <activity
+            android:name=".Update_Tutorials"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".AddTutorials"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".TutorialManagerUserInterface"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".AddPaymentMethod" />
         <activity
             android:name=".AddShippingAddress"
             android:screenOrientation="portrait"
