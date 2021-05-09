@@ -174,7 +174,7 @@
             android:layout_height="60dp"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="10dp"
-            android:background="#5DA55D"
+            android:background="#A5CAA8"
             app:menu="@menu/bottom_navigation1" />
 
     </RelativeLayout>

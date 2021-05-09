@@ -41,8 +41,7 @@ public class AddPaymentMethod extends AppCompatActivity {
         setContentView(R.layout.activity_add_payment_method);
 
         saveCardNo=findViewById(R.id.cardNo);
-//        saveExpiryDateMonth=findViewById(R.id.expiry_date_month);
-//        saveExpiryDateYear=findViewById(R.id.expiry_date_year);
+
         spinnerMonth=findViewById(R.id.month_spinner);
         ArrayAdapter<CharSequence> adapterMonth=ArrayAdapter.createFromResource(this,R.array.month,R.layout.support_simple_spinner_dropdown_item);
         spinnerMonth.setAdapter(adapterMonth);
@@ -54,7 +53,6 @@ public class AddPaymentMethod extends AppCompatActivity {
 
 
 
-//        Toast.makeText(AddPaymentMethod.this,radioButton.getText(),Toast.LENGTH_SHORT).show();
 
 
         saveAddressBtn=findViewById(R.id.paymentSave_btn);
