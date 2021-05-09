@@ -1,4 +1,4 @@
-package com.example.planthome;
+package com.example.planthome.CustomerManagement;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,12 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
-import com.example.planthome.CustomerManagement.ConfirmPaymentMethod;
+import com.example.planthome.R;
 
 public class PlaceOrder extends AppCompatActivity {
 
-    Button confirm_shipping_Address,confirm_payment_method;
+    TextView confirm_shipping_Address,confirm_payment_method;
     private ImageView back;
 
 
@@ -25,7 +26,7 @@ public class PlaceOrder extends AppCompatActivity {
         confirm_shipping_Address.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(PlaceOrder.this,ConfirmShippingAddress.class);
+                Intent intent=new Intent(PlaceOrder.this, ConfirmShippingAddress.class);
                 startActivity(intent);
             }
         });
@@ -42,7 +43,7 @@ public class PlaceOrder extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(PlaceOrder.this,ShoppingCart.class);
+                Intent intent=new Intent(PlaceOrder.this, ShoppingCart.class);
                 startActivity(intent);
             }
         });

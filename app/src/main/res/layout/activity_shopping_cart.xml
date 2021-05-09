@@ -5,291 +5,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ECF1EB"
-
     tools:context=".CustomerManagement.ShoppingCart">
 
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </ImageView>
 
     <TextView
         android:id="@+id/cartTextView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="48dp"
         android:text="@string/cartText1"
         android:textColor="#43A047"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:layout_constraintBottom_toTopOf="@+id/cartTextView2"
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cartTextView1">
-        <TableLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
 
-            <TableRow>
-                <RelativeLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
 
-                        <ImageView
-                            android:layout_width="128dp"
-                            android:layout_height="100dp"
-                            android:padding="10dp"
-                            android:src="@drawable/flower1">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/yourBagRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
 
-                        </ImageView>
 
-
-                        <TextView
-                            android:layout_width="105dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
-                            android:padding="4dp"
-                            android:text="@string/itemNo1"
-                            android:textStyle="bold" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="130dp"
-                        android:orientation="vertical">
-
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:layout_width="102dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="5dp"
-                                android:padding="4dp"
-                                android:text="@string/itemText1"
-                                android:textStyle="bold|italic" />
-
-                            <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="25dp"
-                                android:layout_marginStart="180dp"
-                                android:text="@string/itemPrice1"
-                                android:textStyle="bold" />
-
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-
-                            <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginStart="18dp"
-                                android:src="@drawable/ic_baseline_add_24">
-
-
-                            </ImageView>
-
-                            <TextView
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginStart="45dp"
-                                android:text="@string/qty1" />
-
-                            <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginStart="60dp"
-                                android:src="@drawable/ic_baseline_remove_24">
-
-
-                            </ImageView>
-
-                            <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginStart="130dp"
-                                android:src="@drawable/ic_baseline_delete_24">
-
-
-                            </ImageView>
-
-
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:layout_width="40dp"
-                                android:layout_height="20dp"
-                                android:layout_marginStart="36dp"
-                                android:text="@string/qtyDes"
-                                android:textStyle="bold" />
-
-                        </RelativeLayout>
-
-                    </LinearLayout>
-
-                </RelativeLayout>
-
-
-
-            </TableRow>
-
-            <TableRow>
-
-                <RelativeLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="128dp"
-                            android:layout_height="100dp"
-                            android:padding="10dp"
-                            android:src="@drawable/pot1">
-
-
-                        </ImageView>
-
-
-                        <TextView
-                            android:layout_width="105dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
-                            android:padding="4dp"
-                            android:text="@string/itemNo2"
-                            android:textStyle="bold" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="130dp"
-                        android:orientation="vertical">
-
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:layout_width="132dp"
-                                android:layout_height="38dp"
-                                android:layout_marginStart="5dp"
-                                android:padding="4dp"
-                                android:text="@string/itemText2"
-                                android:textStyle="bold|italic" />
-
-                            <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="25dp"
-                                android:layout_marginStart="180dp"
-                                android:text="@string/itemPrice2"
-                                android:textStyle="bold" />
-
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-
-                            <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginStart="18dp"
-                                android:src="@drawable/ic_baseline_add_24">
-
-
-                            </ImageView>
-
-                            <TextView
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginStart="45dp"
-                                android:text="@string/qty2" />
-
-                            <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginStart="60dp"
-                                android:src="@drawable/ic_baseline_remove_24">
-
-
-                            </ImageView>
-
-                            <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_marginStart="130dp"
-                                android:src="@drawable/ic_baseline_delete_24">
-
-
-                            </ImageView>
-
-
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:layout_width="40dp"
-                                android:layout_height="20dp"
-                                android:layout_marginStart="36dp"
-                                android:text="@string/qtyDes"
-                                android:textStyle="bold" />
-
-                        </RelativeLayout>
-
-                    </LinearLayout>
-
-                </RelativeLayout>
-
-
-
-
-
-            </TableRow>
-
-            <TableRow>
-
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:padding="10dp"
-                    android:src="@drawable/fertilizer1">
-
-
-                </ImageView>
-
-            </TableRow>
-
-
-        </TableLayout>
-
-
-
-
-
+        </androidx.recyclerview.widget.RecyclerView>
 
 
     </ScrollView>
@@ -299,86 +65,92 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="36dp"
         android:text="@string/cartText2"
         android:textColor="#43A047"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/cartTextView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
     <TextView
         android:id="@+id/cartTextView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
 
         android:text="@string/cartText3"
         android:textColor="#265728"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartTextView2" />
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/relativeLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:layout_marginTop="14dp"-->
 
-        <TextView
-            android:id="@+id/cartTextView4"
-            android:layout_width="150dp"
-            android:layout_height="21dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="138dp"
-            android:layout_marginTop="23dp"
-            android:layout_marginEnd="17dp"
-            android:layout_marginBottom="26dp"
-            android:layout_toEndOf="@+id/cartTextView5"
-            android:text="@string/price"
-            android:textColor="#0C0C0C"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/cartTextView3">-->
 
-        <TextView
-            android:id="@+id/cartTextView5"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="-2dp"
-            android:layout_marginTop="19dp"
-            android:layout_marginBottom="19dp"
+<!--        <TextView-->
+<!--            android:id="@+id/cartTextView4"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="21dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="138dp"-->
+<!--            android:layout_marginTop="23dp"-->
+<!--            android:layout_marginEnd="17dp"-->
+<!--            android:layout_marginBottom="26dp"-->
+<!--            android:layout_toEndOf="@+id/cartTextView5"-->
+<!--            android:textColor="#0C0C0C"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold" />-->
 
-            android:text="@string/cartText4"
-            android:textColor="#43A047"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-    </RelativeLayout>
+<!--        <TextView-->
+<!--            android:id="@+id/cartTextView5"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="23dp"-->
+<!--            android:layout_marginTop="19dp"-->
+<!--            android:layout_marginBottom="19dp"-->
+
+<!--            android:text="@string/cartText4"-->
+<!--            android:textColor="#43A047"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold" />-->
+<!--    </RelativeLayout>-->
+
 
     <Button
         android:id="@+id/checkout"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="44dp"
         android:background="#43A047"
         android:text="@string/btn_Checkout"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
