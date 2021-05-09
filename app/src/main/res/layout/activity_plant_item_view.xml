@@ -15,6 +15,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_back_border"
         android:scaleType="fitXY"
         android:src="@drawable/plant1" />
 
@@ -26,7 +27,7 @@
         android:background="#ECF1EB"
         android:gravity="center"
         android:text="cherry"
-        android:textColor="@color/black"
+        android:textColor="#756f6f"
         android:textSize="25dp"
         android:textStyle="bold">
 
@@ -40,7 +41,7 @@
         android:background="#ECF1EB"
         android:gravity="center"
         android:text="250"
-        android:textColor="@color/black"
+        android:textColor="#756f6f"
         android:textSize="25dp"
         android:textStyle="bold">
 
@@ -55,7 +56,7 @@
         android:background="#ECF1EB"
         android:gravity="center"
         android:text="Fruit Plant"
-        android:textColor="@color/black"
+        android:textColor="#756f6f"
         android:textSize="25dp"
         android:textStyle="bold">
 
@@ -64,13 +65,16 @@
     <Button
         android:id="@+id/plant_delete_button"
         android:layout_width="150dp"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/text_plant_item_type"
         android:layout_marginLeft="130dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="15dp"
-        android:background="@drawable/delete_btn"
-        android:text="Delete"></Button>
+        android:background="@drawable/button_style"
+        android:text="Delete"
+        android:textColor="#0a0707"
+        app:strokeColor="#FBFFFB"
+        ></Button>
 
 </RelativeLayout>
