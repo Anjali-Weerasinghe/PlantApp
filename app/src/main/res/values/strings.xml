@@ -1,200 +1,289 @@
-<resources>
-    <string name="app_name">PlantHome</string>
-    <string name="logoName">Plant Home</string>
-    <string name="team">Develop By</string>
-    <string name="teamName">Code Cluster Studio</string>
-    <string name="search_text">Search</string>
-    <string name="search_icon">Search...</string>
-    <string name="home">Home</string>
-    <string name="login">Login</string>
-    <string name="message">message</string>
-    <string name="homeParagraph">"Make your living space more attractive.Now you can order any plants,pots or fertilizers using this app and here are more tutorials.Let's have a fun.."</string>
-    <string name="loginText1">Hello</string>
-    <string name="loginText2">"Let's Discover more plants."</string>
-    <string name="Username">Username</string>
-    <string name="password">Password</string>
-    <string name="remember_me">Remember me</string>
-    <string name="forgot_password">Forgot password</string>
-    <string name="btn_forgotPass">Sign Up</string>
-    <string name="forgot_pass_des">Don\'t Have Account?</string>
-    <string name="regText1">Hello</string>
-    <string name="regText2">"Let's create Your Account"</string>
-    <string name="Email">Email</string>
-    <string name="btn_Register">Register</string>
-    <string name="checkBoxDes"><![CDATA[Agree Terms & Conditions]]></string>
-    <string name="passwordResetText1">Let\'s Reset Your Password</string>
-    <string name="changePasswordText1">Hello</string>
-    <string name="changePasswordText2">Let\'s Chage your Password</string>
-    <string name="currentPassword">Current Password</string>
-    <string name="newPassword">New Password</string>
-    <string name="save">Save</string>
-    <string name="cart">Cart</string>
-    <string name="profile">profile</string>
-    <string name="cartText1">Your Bag</string>
-    <string name="btn_save">Save</string>
-    <string name="cartText2">Delivery</string>
-    <string name="cartText3">After purchase your Item arive in 21 days on or before</string>
-    <string name="cartText4">Total Amount</string>
-    <string name="price">Rs 1450.00</string>
-    <string name="itemText1">Gardian Rose</string>
-    <string name="itemNo1">Item No:1024</string>
-    <string name="itemPrice1">Rs :  350.00</string>
-    <string name="qty1">2</string>
-    <string name="qtyDes">qty</string>
-    <string name="itemNo2">Item No :3048</string>
-    <string name="itemText2">Cool Brown Pot</string>
-    <string name="qty2">5</string>
-    <string name="itemPrice2">Rs :  150.00</string>
-    <string name="shippingAddress">ADD SHIPPING ADDRESS</string>
-    <string name="No">No</string>
-    <string name="address1">Address1</string>
-    <string name="address2">Address2</string>
-    <string name="city">City</string>
-    <string name="country">Country</string>
-    <string name="postalCode">PostalCode</string>
-    <string name="btn_addressSave">SAVE</string>
-    <string name="btn_Checkout">Check Out</string>
-    <string name="userMail">malindujethaka@gmail.com</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">close navigation drawer</string>
-    <string name="communicate">Communicate</string>
-    <!--    <string name="shipping_address">Shipping Address</string>-->
-    <string name="payment_method">Payment Method</string>
-    <string name="change_password">Change Password</string>
-    <string name="logout">Logout</string>
-    <string name="rate_us">Rate Us</string>
-    <string name="share">Share</string>
-    <string name="planting">Planting</string>
-    <string name="navCart">Cart</string>
-    <string name="navHome">Home</string>
-    <string name="navProfile">Profile</string>
-    <string name="questions">Questions</string>
-    <string name="add_payment_method">Add Payment Method</string>
-    <string name="visaCard">Visa Card</string>
-    <string name="masterCard">Master Card</string>
-    <string name="card_no">Card No</string>
-    <string name="expiry_date">Expiry Date</string>
-    <string name="cvc">CVC</string>
-    <string name="shipping_address">Shipping Address</string>
-    <string name="full_name">Full Name</string>
-    <string name="nic">NIC</string>
-    <string name="mobile">Mobile</string>
-    <string name="_24">24</string>
-    <string name="login_as_admin">Login as Admin</string>
-    <string name="adminloginText2">Let\'s Login as Admin</string>
-    <string name="remove_item">Remove</string>
-    <string name="order_confirmation">Order Confirmation</string>
-    <string name="select_shipping_address">SELECT SHIPPING ADDRESS</string>
-    <string name="select_payment_method">SELECT PAYMENT METHOD</string>
-    <string name="selectaddress">select</string>
-    <string name="select_payment">select</string>
-    <string name="confirm_payment_method">Confirm Payment Method</string>
-    <string name="my_orders">My Orders</string>
+<<resources>
+<string name="app_name">PlantHome</string>
+<string name="logoName">Plant Home</string>
+<string name="team">Develop By</string>
+<string name="teamName">Code Cluster Studio</string>
+<string name="search_text">Search</string>
+<string name="search_icon">Search...</string>
+<string name="home">Home</string>
+<string name="login">Login</string>
+<string name="message">message</string>
+<string name="homeParagraph">"Make your living space more attractive.Now you can order any plants,pots or fertilizers using this app and here are more tutorials.Let's have a fun.."</string>
+<string name="loginText1">Hello</string>
+<string name="loginText2">"Let's Discover more plants."</string>
+<string name="Username">Username</string>
+<string name="password">Password</string>
+<string name="remember_me">Remember me</string>
+<string name="forgot_password">Forgot password</string>
+<string name="btn_forgotPass">Sign Up</string>
+<string name="forgot_pass_des">Don\'t Have Account?</string>
+<string name="regText1">Hello</string>
+<string name="regText2">"Let's create Your Account"</string>
+<string name="Email">Email</string>
+<string name="btn_Register">Register</string>
+<string name="checkBoxDes"><![CDATA[Agree Terms & Conditions]]></string>
+<string name="passwordResetText1">Let\'s Reset Your Password</string>
+<string name="changePasswordText1">Hello</string>
+<string name="changePasswordText2">Let\'s Chage your Password</string>
+<string name="currentPassword">Current Password</string>
+<string name="newPassword">New Password</string>
+<string name="save">Save</string>
+<string name="cart">Cart</string>
+<string name="profile">profile</string>
+<string name="cartText1">Your Bag</string>
+<string name="btn_save">Save</string>
+<string name="cartText2">Delivery</string>
+<string name="cartText3">After purchase your Item arive in 21 days on or before</string>
+<string name="cartText4">Total Amount</string>
+<string name="price">Rs 1450.00</string>
+<string name="itemText1">Gardian Rose</string>
+<string name="itemNo1">Item No:1024</string>
+<string name="itemPrice1">Rs :  350.00</string>
+<string name="qty1">2</string>
+<string name="qtyDes">qty</string>
+<string name="itemNo2">Item No :3048</string>
+<string name="itemText2">Cool Brown Pot</string>
+<string name="qty2">5</string>
+<string name="itemPrice2">Rs :  150.00</string>
+<string name="shippingAddress">ADD SHIPPING ADDRESS</string>
+<string name="No">No</string>
+<string name="address1">Address1</string>
+<string name="address2">Address2</string>
+<string name="city">City</string>
+<string name="country">Country</string>
+<string name="postalCode">PostalCode</string>
+<string name="btn_addressSave">SAVE</string>
+<string name="btn_Checkout">Check Out</string>
+<string name="userMail">malindujethaka@gmail.com</string>
+<string name="navigation_drawer_open">Open navigation drawer</string>
+<string name="navigation_drawer_close">close navigation drawer</string>
+<string name="communicate">Communicate</string>
+<!--    <string name="shipping_address">Shipping Address</string>-->
+<string name="payment_method">Payment Method</string>
+<string name="change_password">Change Password</string>
+<string name="logout">Logout</string>
+<string name="rate_us">Rate Us</string>
+<string name="share">Share</string>
+<string name="planting">Planting</string>
+<string name="navCart">Cart</string>
+<string name="navHome">Home</string>
+<string name="navProfile">Profile</string>
+<string name="questions">Questions</string>
+<string name="add_payment_method">Add Payment Method</string>
+<string name="visaCard">Visa Card</string>
+<string name="masterCard">Master Card</string>
+<string name="card_no">Card No</string>
+<string name="expiry_date">Expiry Date</string>
+<string name="cvc">CVC</string>
+<string name="shipping_address">Shipping Address</string>
+<string name="full_name">Full Name</string>
+<string name="nic">NIC</string>
+<string name="mobile">Mobile</string>
+<string name="_24">24</string>
+<string name="login_as_admin">Login as Admin</string>
+<string name="adminloginText2">Let\'s Login as Admin</string>
+<string name="remove_item">Remove</string>
+<string name="order_confirmation">Order Confirmation</string>
+<string name="select_shipping_address">SELECT SHIPPING ADDRESS</string>
+<string name="select_payment_method">SELECT PAYMENT METHOD</string>
+<string name="selectaddress">select</string>
+<string name="select_payment">select</string>
+<string name="confirm_payment_method">Confirm Payment Method</string>
+<string name="my_orders">My Orders</string>
 
-    <string-array name="userType">
-        <item>Plant Manager</item>
-        <item>Tutorial Manager</item>
-        <item>Fertilizer Manager</item>
-    </string-array>
-    <string-array name="month">
-        <item>01</item>
-        <item>02</item>
-        <item>03</item>
-        <item>04</item>
-        <item>05</item>
-        <item>06</item>
-        <item>07</item>
-        <item>08</item>
-        <item>09</item>
-        <item>10</item>
-        <item>11</item>
-        <item>12</item>
-    </string-array>
+<string-array name="userType">
+    <item>Plant Manager</item>
+    <item>Tutorial Manager</item>
+    <item>Fertilizer Manager</item>
+</string-array>
+<string-array name="month">
+    <item>01</item>
+    <item>02</item>
+    <item>03</item>
+    <item>04</item>
+    <item>05</item>
+    <item>06</item>
+    <item>07</item>
+    <item>08</item>
+    <item>09</item>
+    <item>10</item>
+    <item>11</item>
+    <item>12</item>
+</string-array>
 
-    <string-array name="year">
-        <item>21</item>
-        <item>22</item>
-        <item>23</item>
-        <item>24</item>
-        <item>25</item>
-        <item>26</item>
-        <item>27</item>
-        <item>28</item>
-        <item>29</item>
+<string-array name="year">
+    <item>21</item>
+    <item>22</item>
+    <item>23</item>
+    <item>24</item>
+    <item>25</item>
+    <item>26</item>
+    <item>27</item>
+    <item>28</item>
+    <item>29</item>
 
 
-    </string-array>
-    <string name="add_plant_banner">Add  New Plants!</string>
-    <string name="add_plant_name">Plant Name</string>
-    <string name="enter_new_plant_name">Enter plant name</string>
-    <string name="add_plant_type">Plant Type</string>
-    <string name="add_plant_price">Plant Price</string>
-    <string name="enter_plant_price">Enter Plant Price</string>
-    <string name="add_button">Add</string>
-    <string name="delete_plant_banner">Delete Plant</string>
-    <string name="deelete_plant_item_number">Enter Plant Item Number</string>
-    <string name="display_delete_item_number" />
-    <string name="delete_plant_name">Plant Name</string>
-    <string name="display_delete_plant_name" />
-    <string name="delete_plant_type">Plant Type</string>
-    <string name="display_delete_plant_type" />
-    <string name="delete_plant_price">Plant Price</string>
-    <string name="display_delete_plant_price" />
-    <string name="delete_button">Delete</string>
-    <string name="update_plant_banner">Update Plants!</string>
-    <string name="update_plant_item_number">Update Plant Item Number</string>
-    <string name="display_update_item_number" />
-    <string name="update_plant_name">Plant Name</string>
-    <string name="dispaly_update_plant_name" />
-    <string name="update_plant_type">Plant Type</string>
-    <string name="display_update_plant_type" />
-    <string name="update_plant_price">Plant Price</string>
-    <string name="display_update_plant_price" />
-    <string name="update_plant_image">Update Plant Image</string>
-    <string name="update_button">Update</string>
-    <string name="textUploadPlantimage">Upload Plant Image</string>
-    <string-array name="typebar">
-        <item>Indoor Plants</item>
-        <item>Fruit Plants</item>
-        <item> Flower Plants</item>
+</string-array>
+<string name="add_plant_banner">Add  New Plants!</string>
+<string name="add_plant_name">Plant Name</string>
+<string name="enter_new_plant_name">Enter plant name</string>
+<string name="add_plant_type">Plant Type</string>
+<string name="add_plant_price">Plant Price</string>
+<string name="enter_plant_price">Enter Plant Price</string>
+<string name="add_button">Add</string>
+<string name="delete_plant_banner">Delete Plant</string>
+<string name="deelete_plant_item_number">Enter Plant Item Number</string>
+<string name="display_delete_item_number" />
+<string name="delete_plant_name">Plant Name</string>
+<string name="display_delete_plant_name" />
+<string name="delete_plant_type">Plant Type</string>
+<string name="display_delete_plant_type" />
+<string name="delete_plant_price">Plant Price</string>
+<string name="display_delete_plant_price" />
+<string name="delete_button">Delete</string>
+<string name="update_plant_banner">Update Plants!</string>
+<string name="update_plant_item_number">Update Plant Item Number</string>
+<string name="display_update_item_number" />
+<string name="update_plant_name">Plant Name</string>
+<string name="dispaly_update_plant_name" />
+<string name="update_plant_type">Plant Type</string>
+<string name="display_update_plant_type" />
+<string name="update_plant_price">Plant Price</string>
+<string name="display_update_plant_price" />
+<string name="update_plant_image">Update Plant Image</string>
+<string name="update_button">Update</string>
+<string name="textUploadPlantimage">Upload Plant Image</string>
+<string-array name="typebar">
+    <item>Indoor Plants</item>
+    <item>Fruit Plants</item>
+    <item> Flower Plants</item>
 
-    </string-array>
+</string-array>
 
-    <string name="add_tute_type">Tute Type</string>
-    <string name="Add_tutorials">Add new tutorials</string>
-    <string name="Tute_plant_name">Plant Name</string>
-    <string name="AddTute_nameView">Name of the plant:</string>
-    <string name="AddTute_plant_method">Add plant method:</string>
-    <string name="AddTute_methodBox">Enter Planting methods and other details</string>
-    <string name="Addtute_image">Add Image:</string>
-    <string name="Addtute_button">ADD</string>
-    <string name="UpdateTute_title">Update Tutorials</string>
-    <string name="UpdateTute_id">Enter the plant id</string>
-    <string name="UpdateTute_IdBox" />
-    <string name="UpdateTutorial_plantId">Enter the Id</string>
-    <string name="UpdateTute_plnatType">Plant Type:</string>
-    <string name="UpdateTuite_button">Update</string>
-    <string name="UpdateTute_image">Update Image:</string>
-    <string name="UpdateTute_plantName">Rose</string>
-    <string name="UpdateTutprial_pName">Plant Name:</string>
-    <string name="Update_tutePlantBoxname">Rose</string>
-    <string name="UpdateTute_Methods">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</string>
-    <string name="UpdateTutorial_method">DEscription and Methods:</string>
-    <string name="UpdateTute_descriptionBox">zxasfadsssdgfsgdfafghgagggadgg g dfsagdfgadggg</string>
-    <string name="DeleteTute_Title">Delete Tutorials</string>
-    <string name="DeleteTute_Type">Plant Type:</string>
-    <string name="DeleteTutorial_Id">Nter Plant Id:</string>
-    <string name="DeleteTute_Typw">Plant Type:</string>
-    <string name="DeletTute_Name">Plant Name:</string>
-    <string name="DeleteTUTE_dESCR">Tutorial Description:</string>
-    <string name="DeleteTute_button">Delete</string>
-    <string name="DeleteImage_tute">Images:</string>
-    <string name="DeleteTute_id">Enter Plant Id:</string>
-    <string-array name="barr">
-        <item>Flower plant</item>
-        <item>Fruit plant</item>
-        <item>Indoor plant</item>
-        <item>Vegetable plant</item>
-    </string-array>
+<string name="add_tute_type">Tute Type</string>
+<string name="Add_tutorials">Add new tutorials</string>
+<string name="Tute_plant_name">Plant Name</string>
+<string name="AddTute_nameView">Name of the plant:</string>
+<string name="AddTute_plant_method">Add plant method:</string>
+<string name="AddTute_methodBox">Enter Planting methods and other details</string>
+<string name="Addtute_image">Add Image:</string>
+<string name="Addtute_button">ADD</string>
+<string name="UpdateTute_title">Update Tutorials</string>
+<string name="UpdateTute_id">Enter the plant id</string>
+<string name="UpdateTute_IdBox" />
+<string name="UpdateTutorial_plantId">Enter the Id</string>
+<string name="UpdateTute_plnatType">Plant Type:</string>
+<string name="UpdateTuite_button">Update</string>
+<string name="UpdateTute_image">Update Image:</string>
+<string name="UpdateTute_plantName">Rose</string>
+<string name="UpdateTutprial_pName">Plant Name:</string>
+<string name="Update_tutePlantBoxname">Rose</string>
+<string name="UpdateTute_Methods">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</string>
+<string name="UpdateTutorial_method">DEscription and Methods:</string>
+<string name="UpdateTute_descriptionBox">zxasfadsssdgfsgdfafghgagggadgg g dfsagdfgadggg</string>
+<string name="DeleteTute_Title">Delete Tutorials</string>
+<string name="DeleteTute_Type">Plant Type:</string>
+<string name="DeleteTutorial_Id">Nter Plant Id:</string>
+<string name="DeleteTute_Typw">Plant Type:</string>
+<string name="DeletTute_Name">Plant Name:</string>
+<string name="DeleteTUTE_dESCR">Tutorial Description:</string>
+<string name="DeleteTute_button">Delete</string>
+<string name="DeleteImage_tute">Images:</string>
+<string name="DeleteTute_id">Enter Plant Id:</string>
+<string-array name="barr">
+    <item>Flower plant</item>
+    <item>Fruit plant</item>
+    <item>Indoor plant</item>
+    <item>Vegetable plant</item>
+</string-array>
+<string name="Pots">Pots</string>
+<string name="Fertilizer">Fertilizer</string>
+<string name="Concrete">Concrete</string>
+<string name="Price01">Rs.450.00</string>
+<string name="Metal">Metal</string>
+<string name="Price02">RS.1000.00</string>
+<string name="GlazedCeramic">Ceramic</string>
+<string name="Price03">Rs.650.00</string>
+<string name="FiberGlass">Fiber Glass</string>
+<string name="Price04">Rs.4300.00</string>
+
+<string name="clay">clay</string>
+<string name="foam">Foam</string>
+<string name="selfwatering">Self Watering</string>
+<string name="mineralfertilizer">Mineral Fertilizer</string>
+<string name="nitrogenfertilizer">Nitrogen Fertilizer</string>
+<string name="phosphorus">Phosphorus Fertilizer</string>
+<string name="potassiumfertilizer">Potassium Fertilizer</string>
+<string name="cms">Calsium, Magnesium and Sulfer</string>
+<string name="micro" />
+<string name="micro1">Micronutrient Fertilizer</string>
+<string name="organic">Organic Fertilizer</string>
+<string name="plaingreen">Plain Green</string>
+<string name="price05">Rs.1200.00</string>
+<string name="ashen">Ashen Glazed</string>
+<string name="price06">Rs.1200.00</string>
+<string name="antiqueglazed">Antique Glazed</string>
+<string name="vitanemglazed">Vitanem Glazed</string>
+<string name="guardiandf">Guardian DF</string>
+<string name="price07">Rs.500.00</string>
+<string name="guardiandl">Guardian DL</string>
+<string name="price08">Rs.650.00</string>
+<string name="agrotainPlus">Agrotain Plus</string>
+<string name="price09">Rs.700.00</string>
+<string name="superu">Super U</string>
+<string name="price10">Rs.550.00</string>
+<string name="description">Description</string>
+<string name="guardiandes">\?Guardian® and Guardian®-DF contain 66% nitrogen as dicyandiamide (DCD®) ?Guardian®-DL contains 31% nitrogen as dicyandiamide (DCD®) and 10% sulfur as ammonium thiosulfate (ATS)</string>
+<string name="guardiandfdescription">Guardian® and Guardian®-DF contain 66% nitrogen as dicyandiamide (DCD®) Guardian®-DL contains 31% nitrogen as dicyandiamide (DCD®) and 10% sulfur as ammonium thiosulfate (ATS)</string>
+<string name="addtoCart">Add To Cart</string>
+<string name="one">1</string>
+<string name="two">2</string>
+<string name="three">3</string>
+<string name="thirteen">13</string>
+<string name="itemcode">Item Code: 1</string>
+<string name="potdes">Chinese Style Bonsai Pot Dark Green, Glazed Flower Pot Planter Home. Type: Planters,Material: Ceramic,  Size: 110.6x7.9x4.5cm, Quantity: 1pc.</string>
+<string name="Cart">cart</string>
+<string name="addnewpots">Add New Pots</string>
+<string name="name">Name</string>
+<string name="category">Category</string>
+<string name="Price">Price</string>
+<string name="uploadphoto">Upload a Photo</string>
+<string name="addpot">ADD POT</string>
+<string name="addnewfertilizer">Add New Fertilizer</string>
+<string name="organicfertilizer">Organic Fertilizer</string>
+<string name="addertilizer">ADD FERTILIZER</string>
+<string name="updatedeletepots">Updare $ Delete Pots</string>
+<string name="updateanddeletepots"><![CDATA[Update & Delete Pots]]></string>
+<string name="itemcode1">Item Code</string>
+<string name="search">Search</string>
+<string name="photo">Photo</string>
+<string name="update">UPDATE</string>
+<string name="delete">DELETE</string>
+<string name="updatedeletefertilizer"><![CDATA[Update & Delete Fertilizer]]></string>
+<string name="desdes">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+<string name="admin">Admin</string>
+<string name="id">ID: A20000001B</string>
+<string name="add">Add</string>
+<string name="updatedelete"><![CDATA[Update & Delete]]></string>
+<string name="title_activity_pots_imagesviewer">PotsImagesviewer</string>
+<!-- Strings used for fragments for navigation -->
+<string name="first_fragment_label">First Fragment</string>
+<string name="second_fragment_label">Second Fragment</string>
+<string name="next">Next</string>
+<string name="previous">Previous</string>
+
+<string name="hello_first_fragment">Hello first fragment</string>
+<string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+<string name="procare">Pro Care</string>
+<string name="price11">Rs.5000.00</string>
+<string name="huminrich">HuminRich</string>
+<string name="price12">Rs.7000.00</string>
+<string name="calmags">Calmags</string>
+<string name="price13">Rs.8000.00</string>
+<string name="topper">Topper</string>
+<string name="price14">Rs.350.00</string>
+<string name="glazedCeramic">Glazed Ceramic</string>
+<string name="register">Register</string>
+<string name="Profile">Profile</string>
 
 </resources>
