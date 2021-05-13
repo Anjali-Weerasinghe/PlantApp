@@ -4,8 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawerLayout"
-     android:layout_height="match_parent"
+    android:layout_height="match_parent"
     android:layout_width="match_parent"
+    android:background="#ECF1EB"
     tools:openDrawer="start"
     android:fitsSystemWindows="true">
 
@@ -25,7 +26,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".UserInterface"
+        tools:context=".CustomerManagement.UserInterface"
         >
 
 

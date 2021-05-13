@@ -38,8 +38,8 @@
             <item
 
                 android:id="@+id/side_nav_password"
-                android:icon="@drawable/ic_baseline_password_24"
-                android:title="@string/change_password" />
+                android:icon="@drawable/ic_baseline_playlist_add_check_24"
+                android:title="@string/my_orders" />
 
 
             <item

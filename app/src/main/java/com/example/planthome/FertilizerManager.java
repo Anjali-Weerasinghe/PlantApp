@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AddShippingAddress extends AppCompatActivity {
+public class FertilizerManager extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_shipping_address);
+        setContentView(R.layout.activity_fertilizer_manager);
     }
 }
