@@ -20,7 +20,7 @@ public class ManageTutorials extends AppCompatActivity {
         editTutes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(ManageTutorials.this,TutorialManagerUserInterface.class);
+                Intent intent =new Intent(ManageTutorials.this,TutorialManager.class);
                 intent.putExtra("Admin","Admin");
                 startActivity(intent);
 
