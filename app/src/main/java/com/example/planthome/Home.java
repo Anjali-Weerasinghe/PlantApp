@@ -25,6 +25,8 @@ public class Home extends AppCompatActivity {
         cus_plant_view=findViewById(R.id.plant_image_View);
 
 
+
+
         BottomNavigationView navigationView1=(BottomNavigationView) findViewById(R.id.navigation1);
 
         navigationView1.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
