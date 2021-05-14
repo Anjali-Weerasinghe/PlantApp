@@ -104,21 +104,28 @@ public class AddTutorials extends AppCompatActivity {
         plantM=pMethod.getText().toString();
 
 
+
         if(ImageUri==null)
         {
             Toast.makeText(this, "Plant image is mandatory...", Toast.LENGTH_SHORT).show();
+            return;
         }
-        else if(TextUtils.isEmpty(tuteType))
+        if(TextUtils.isEmpty(tuteType))
         {
             Toast.makeText(this, "Please Select Plant Type...", Toast.LENGTH_SHORT).show();
+            return;
         }
-        else if(TextUtils.isEmpty(plantName))
+       if( plantName.isEmpty())
         {
-            Toast.makeText(this, "Please Enter Plant Name...", Toast.LENGTH_SHORT).show();
+         //Toast.makeText(this, "Please Enter Plant Name...", Toast.LENGTH_SHORT).show();
+            pName.setError("Please Enter  Plant Name...");
+            return;
         }
-        else if(TextUtils.isEmpty(plantM))
+       if(plantM.isEmpty())
         {
-            Toast.makeText(this, "Please Enter Planting Method....", Toast.LENGTH_SHORT).show();
+          //Toast.makeText(this, "Please Enter Planting Method....", Toast.LENGTH_SHORT).show();
+            pMethod.setError("Please Enter  Plant method...");
+            return;
         }
         else {
 

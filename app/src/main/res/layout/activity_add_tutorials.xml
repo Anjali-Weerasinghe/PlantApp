@@ -5,8 +5,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#11B12B"
-        android:backgroundTint="#CAF3EF"
+        android:background="#ECF1EB"
+        android:backgroundTint="#ECF1EB"
         tools:context=".TutorialManagement.AddTutorials">
 
         <RelativeLayout
@@ -21,8 +21,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#ECF6F5"
-                android:backgroundTint="#CAF3EF"
+                android:background="#ECF1EB"
+                android:backgroundTint="#ECF1EB"
                 android:orientation="vertical"
                 tools:ignore="UselessParent">
 
@@ -71,6 +71,7 @@
                     android:layout_marginRight="50sp"
                     android:layout_marginBottom="10dp"
                     android:cropToPadding="false"
+
                     android:src="@drawable/ic_baseline_add_photo_alternate_24"></ImageView>
 
                 <TextView
@@ -133,7 +134,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="50sp"
-                    android:background="#C2E6C4"
+                    android:background="@drawable/edit_text_border"
                     android:ems="10"
                     android:hint="@string/AddTute_nameView"
                     android:inputType="text"
@@ -170,7 +171,7 @@
                     android:layout_centerVertical="true"
 
                     android:layout_marginLeft="50sp"
-                    android:background="#C2E6C4"
+                    android:background="@drawable/edit_text_border"
                     android:ems="10"
                     android:hint="@string/AddTute_methodBox"
                     android:inputType="textMultiLine"
@@ -189,7 +190,7 @@
                     android:layout_marginLeft="130sp"
                     android:layout_marginTop="20sp"
                     android:layout_marginBottom="40sp"
-                    android:background="#74BC2D"
+                    android:background="@drawable/tute_button_search"
                     android:backgroundTint="#7AEA81"
                     android:shadowColor="#090808"
                     android:text="@string/Addtute_button"
