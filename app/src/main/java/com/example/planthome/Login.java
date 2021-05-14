@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.example.planthome.PlantsManagement.PlantManagerUserInterface;
+
 public class Login extends AppCompatActivity {
 
     private ImageView back;
@@ -25,7 +27,13 @@ public class Login extends AppCompatActivity {
                openHome();
            }
        });
-
+        Button loginAdmin_btn=(Button) findViewById(R.id.login_as_admin);
+        loginAdmin_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loginAdmin();
+            }
+        });
 
         btn1=(Button) findViewById(R.id.btn_fogotPassword);
         btn1.setOnClickListener(new View.OnClickListener(){
@@ -42,16 +50,14 @@ public class Login extends AppCompatActivity {
             }
         });
         btn3=(Button) findViewById(R.id.btn_forgotPassword);
-        btn3.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                forgotPassword();
-            }
-        });
+
     }
 
 
-
+    private void loginAdmin() {
+        Intent intent=new Intent(this,AdminLogin.class);
+        startActivity(intent);
+    }
 
 
 
@@ -65,11 +71,8 @@ public class Login extends AppCompatActivity {
         startActivity(intent3);
     }
     public void openUserInterface(){
-        Intent intent5=new Intent(this,PlantManagerUserInterface.class);
+        Intent intent5=new Intent(this, PlantManagerUserInterface.class);
         startActivity(intent5);
     }
-    public void forgotPassword(){
-        Intent intent6=new Intent(this,ChangePassword.class);
-        startActivity(intent6);
-    }
+
 }
