@@ -11,11 +11,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.planthome.PlantsManagement.Customer_view_plant_item;
+import com.example.planthome.TutorialManagement.SearchTutesActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Home extends AppCompatActivity {
 
-    ImageView plant;
+    ImageView plant,tute;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,5 +51,15 @@ public class Home extends AppCompatActivity {
                 startActivity(intent2);
             }
         });
+
+        tute=findViewById(R.id.imageView5);
+            tute.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent3=new Intent(Home.this, SearchTutesActivity.class);
+                    startActivity(intent3);
+                }
+            });
+
     }
 }
