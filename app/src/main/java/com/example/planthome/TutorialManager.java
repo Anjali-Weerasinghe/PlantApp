@@ -46,13 +46,13 @@ public class TutorialManager extends AppCompatActivity implements NavigationView
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial_manager);
         //edit
-        //type=getIntent().getExtras().get("Admin").toString();
-//        Intent intent =getIntent();
-//        Bundle bundle =intent.getExtras();
-//        if (bundle!=null)
-//        {
-//            type=getIntent().getExtras().get("Admin").toString();
-//        }
+       //type=getIntent().getExtras().get("Admin").toString();
+//       Intent intent =getIntent();
+//       Bundle bundle =intent.getExtras();
+//    if (bundle!=null)
+//       {
+//          type=getIntent().getExtras().get("Admin").toString();
+//      }
 
 
         TutesReference = FirebaseDatabase.getInstance().getReference().child("Tutes");
