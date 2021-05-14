@@ -11,17 +11,20 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.planthome.PlantsManagement.Customer_view_plant_item;
-import com.example.planthome.TutorialManagement.SearchTutesActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Home extends AppCompatActivity {
 
-    ImageView plant,tute;
+    ImageView cus_plant_view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        cus_plant_view=findViewById(R.id.plant_image_View);
+
+
 
 
         BottomNavigationView navigationView1=(BottomNavigationView) findViewById(R.id.navigation1);
@@ -42,24 +45,18 @@ public class Home extends AppCompatActivity {
                 return false;
             }
         });
+    }
 
-        plant=findViewById(R.id.imageView3);
-        plant.setOnClickListener(new View.OnClickListener() {
+    @Override
+    protected void onResume() {
+        super.onResume();
+        cus_plant_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2=new Intent(Home.this, Customer_view_plant_item.class);
-                startActivity(intent2);
+                Intent intent=new Intent(Home.this, Customer_view_plant_item.class);
+                startActivity(intent);
             }
         });
-
-        tute=findViewById(R.id.imageView5);
-            tute.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent3=new Intent(Home.this, SearchTutesActivity.class);
-                    startActivity(intent3);
-                }
-            });
 
     }
 }

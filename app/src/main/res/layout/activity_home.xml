@@ -103,7 +103,7 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/plant_image_View"
                     android:layout_width="242dp"
                     android:layout_height="164dp"
                     android:layout_marginStart="45dp"

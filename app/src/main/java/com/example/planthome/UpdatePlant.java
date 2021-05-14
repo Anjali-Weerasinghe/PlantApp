@@ -4,11 +4,11 @@
 //
 //import android.os.Bundle;
 //
-//public class PlantManager extends AppCompatActivity {
+//public class UpdatePlant extends AppCompatActivity {
 //
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
 //        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_plant_manager);
+//        setContentView(R.layout.activity_update_plant);
 //    }
 //}

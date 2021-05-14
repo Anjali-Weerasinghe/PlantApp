@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PlantHome">
-        <activity android:name=".TutorialManagement.ViewTuteMethodActivity"></activity>
+
+        <activity android:name=".TutorialManagement.ViewTuteMethodActivity" />
         <activity android:name=".TutorialManagement.Update_Tutorials" />
         <activity android:name=".TutorialManagement.SearchTutesActivity" />
         <activity android:name=".TutorialManagement.ManageTutorials" />
         <activity android:name=".TutorialManagement.AddTutorials" />
-        <activity android:name=".test" />
+
         <activity android:name=".CustomerManagement.Customer_one_plant_item_view" />
         <activity android:name=".CustomerManagement.ViewPlants" />
         <activity android:name=".PlantsManagement.Customer_view_plant_item" />
@@ -36,7 +37,7 @@
             android:screenOrientation="portrait" />
         <activity android:name=".FertilizerManager" />
         <activity android:name=".TutorialManager" />
-        <activity android:name=".PlantManager" />
+
         <activity
             android:name=".AdminLogin"
             android:screenOrientation="portrait" />
@@ -72,7 +73,8 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

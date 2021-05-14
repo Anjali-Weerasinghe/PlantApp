@@ -145,6 +145,8 @@ public class PlantManagerUserInterface extends AppCompatActivity implements Navi
         switch (item.getItemId()){
 
             case R.id.side_nav_home:
+                Intent intent=new Intent( PlantManagerUserInterface.this,Home.class);
+                startActivity(intent);
                 break;
             case R.id.side_nav_add_plants:
                 Intent intent1=new Intent( PlantManagerUserInterface.this,AddPlant.class);
