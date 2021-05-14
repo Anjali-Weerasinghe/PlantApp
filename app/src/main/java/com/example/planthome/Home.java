@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.planthome.PlantsManagement.Customer_view_plant_item;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Home extends AppCompatActivity {
@@ -50,7 +51,7 @@ public class Home extends AppCompatActivity {
         cus_plant_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Home.this,Customer_view_plant_item.class);
+                Intent intent=new Intent(Home.this, Customer_view_plant_item.class);
                 startActivity(intent);
             }
         });
