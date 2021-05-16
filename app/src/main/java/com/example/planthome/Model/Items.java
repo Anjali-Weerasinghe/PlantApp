@@ -27,11 +27,11 @@ public class Items {
         this.itemKey = itemKey;
     }
 
-    public String getItemName() {
+    public String getName() {
         return name;
     }
 
-    public void setItemName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
