@@ -45,6 +45,7 @@
             android:hint="Item Price"
             android:textAlignment="center"
             android:textSize="16dp"
+            android:inputType="number"
             android:padding="12dp"
             android:layout_margin="5dp"
             android:background="@drawable/boader"
@@ -63,25 +64,25 @@
             android:background="@drawable/boader"
             android:textColor="@color/black"/>
 
-        <Spinner
-                android:layout_marginTop="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.219"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_below="@+id/item_description_update"
-                android:id="@+id/spinner_update"
-                android:background="@drawable/boader"
-                android:layout_width="380dp"
-                android:layout_height="40dp"
-                android:textSize="16dp"
-                android:padding="12dp"
-                android:layout_margin="5dp"
-                 />
+<!--        <Spinner-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.219"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                android:layout_below="@+id/item_description_update"-->
+<!--                android:id="@+id/spinner_update"-->
+<!--                android:background="@drawable/boader"-->
+<!--                android:layout_width="380dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:textSize="16dp"-->
+<!--                android:padding="12dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                 />-->
         <Button
             android:id="@+id/item_update_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/spinner_update"
+            android:layout_below="@+id/item_description_update"
             android:text="@string/update"
             android:textAlignment="center"
             android:textSize="16dp"
