@@ -45,6 +45,7 @@
             android:hint="Item Price"
             android:textAlignment="center"
             android:textSize="16dp"
+            android:inputType="number"
             android:padding="12dp"
             android:layout_margin="5dp"
             android:background="@drawable/boader"
