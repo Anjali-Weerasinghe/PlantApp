@@ -165,7 +165,7 @@ public class AdminLogin extends AppCompatActivity {
 
                             String usernameFromDB=snapshot.child(adminEnteredNIC).child("nic").getValue(String.class);
 
-                            Intent intent=new Intent(getApplicationContext(),addnewpot.class);
+                            Intent intent=new Intent(getApplicationContext(),ItemViwer.class);
                            // intent.putExtra("username",usernameFromDB);
                             //System.out.println(usernameFromDB);
                             startActivity(intent);

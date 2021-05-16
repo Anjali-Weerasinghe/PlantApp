@@ -24,7 +24,7 @@ public class Home extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(Home.this, PotsAndFertilizer.class);
+//                Intent intent = new Intent(Home.this, ItemViwer.class);
 //                startActivity(intent);
             }
         });
