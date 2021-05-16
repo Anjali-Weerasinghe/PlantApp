@@ -60,7 +60,7 @@ public class ItemDetails extends AppCompatActivity {
                     Items items = snapshot.getValue(Items.class);
 
                     itemCode.setText(items.getItemKey());
-                    itemName.setText(items.getItemName());
+                    itemName.setText(items.getName());
                     itemPrice.setText("Price = Rs." + items.getPrice() +".00");
                     itemDescription.setText("Description - " + items.getDescription());
                     Picasso.get().load(items.getImage()).into(itemImage);
