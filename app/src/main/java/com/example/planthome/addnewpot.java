@@ -126,7 +126,7 @@ public class addnewpot extends AppCompatActivity {
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(addnewpot.this, AdminProfileNavigation.class);
+                Intent intent = new Intent(addnewpot.this, ItemViwer.class);
                 startActivity(intent);
             }
         });

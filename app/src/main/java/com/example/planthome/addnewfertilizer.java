@@ -125,7 +125,7 @@ public class addnewfertilizer extends AppCompatActivity {
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(addnewfertilizer.this, AdminProfileNavigation.class);
+                Intent intent = new Intent(addnewfertilizer.this, addnewfertilizer.class);
                 startActivity(intent);
             }
         });
