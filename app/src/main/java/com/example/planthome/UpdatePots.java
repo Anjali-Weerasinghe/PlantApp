@@ -1,9 +1,12 @@
 package com.example.planthome;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -32,7 +35,7 @@ public class UpdatePots extends AppCompatActivity {
 
     private Button item_update, item_delete;
     private EditText item_Name, item_Price, item_Description;
-    Spinner spinner;
+
     private ImageView imageView1;
     private String itemKey = "" , category, saveCurrentDate, saveCurrentTime ;
 
@@ -51,13 +54,13 @@ public class UpdatePots extends AppCompatActivity {
         item_Name = findViewById(R.id.item_name_update);
         item_Price = findViewById(R.id.item_price_update);
         item_Description = findViewById(R.id.item_description_update);
-        spinner = findViewById(R.id.spinner_update);
+
         imageView1 = findViewById(R.id.item_image_update);
         item_delete = findViewById(R.id.item_delete_btn);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.categories, R.layout.support_simple_spinner_dropdown_item);
 
-        spinner.setAdapter(adapter);
+
 
         Calendar calendar = Calendar.getInstance();
 
@@ -78,6 +81,8 @@ public class UpdatePots extends AppCompatActivity {
         item_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
                 deleteThisItem();
             }
         });
@@ -104,7 +109,7 @@ public class UpdatePots extends AppCompatActivity {
         String itname = item_Name.getText().toString();
         String itprice = item_Price.getText().toString();
         String itdescription = item_Description.getText().toString();
-        category = spinner.getSelectedItem().toString();
+
 
         if(itname.equals("")){
             Toast.makeText(this,"Write down Item Name", Toast.LENGTH_SHORT).show();
@@ -124,7 +129,6 @@ public class UpdatePots extends AppCompatActivity {
             itemMap.put("time", saveCurrentTime);
             itemMap.put("price", itprice);
             itemMap.put("description", itdescription);
-            itemMap.put("category", category);
 
             itemsRef.updateChildren(itemMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                 @Override
