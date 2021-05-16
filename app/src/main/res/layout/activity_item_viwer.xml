@@ -4,6 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ttttt"
     tools:context=".ItemViwer">
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="208dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="100dp"
+        android:text="View"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+        app:backgroundTint="@color/btngreen"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/addpot"
+        android:layout_width="208dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="108dp"
+        android:text="@string/addpot"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+
+        app:backgroundTint="@color/btngreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <Button
+        android:id="@+id/addfertilizer"
+        android:layout_width="208dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="92dp"
+        android:text="ADD FERTILIZEr"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+
+        app:backgroundTint="@color/btngreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addpot" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
