@@ -116,7 +116,7 @@ public class AdminProfileNavigation extends AppCompatActivity implements AdminPr
 
                         holder.txtItemCode.setText(model.getItemKey());
                         holder.txtItemCategory.setText(model.getCategory());
-                        holder.txtItemName.setText(model.getItemName());
+                        holder.txtItemName.setText(model.getName());
                         holder.txtItemPrice.setText("Price = Rs." + model.getPrice() + ".00");
                         holder.txtDescription.setText(model.getDescription());
                         Picasso.get().load(model.getImage()).into(holder.imageView);
@@ -138,7 +138,7 @@ public class AdminProfileNavigation extends AppCompatActivity implements AdminPr
 //                                    intent.putExtra("itemKey",model.getItemKey());
 //                                    startActivity(intent);
 //                                }
-                                        Intent intent = new Intent(AdminProfileNavigation.this, ItemDetails.class);
+                                        Intent intent = new Intent(AdminProfileNavigation.this, UpdatePots.class);
                                         intent.putExtra("itemKey",model.getItemKey());
                                         startActivity(intent);
 
@@ -202,9 +202,9 @@ public class AdminProfileNavigation extends AppCompatActivity implements AdminPr
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-        //int id = item.getItemId();
+//        int id = item.getItemId();
         switch (item.getItemId()){
 
             case R.id.nav_home:
@@ -212,6 +212,7 @@ public class AdminProfileNavigation extends AppCompatActivity implements AdminPr
                 startActivity(intent);
                 break;
             case R.id.nav_addpot:
+
                 Intent intent1=new Intent( AdminProfileNavigation.this,addnewpot.class);
                 startActivity(intent1);
                 break;
@@ -223,34 +224,25 @@ public class AdminProfileNavigation extends AppCompatActivity implements AdminPr
 
 
 //        if (id == R.id.nav_home) {
-//            Intent intent = new Intent(AdminProfileNavigation.this,Home.class);
-//            startActivity(intent);
+//            Intent intent1 = new Intent(AdminProfileNavigation.this,Home.class);
+//            startActivity(intent1);
 //
 //
 //        }
 //        else if (id == R.id.nav_addpot) {
 //
-//            Intent intent  = new Intent(AdminProfileNavigation.this,addnewpot.class);
-//            startActivity(intent);
+//            Intent intent2  = new Intent(AdminProfileNavigation.this,addnewpot.class);
+//            startActivity(intent2);
 //
 //        }
 //        else if (id == R.id.nav_addfertilizer) {
-//            Intent intent = new Intent(AdminProfileNavigation.this,addnewfertilizer.class);
-//            startActivity(intent);
+//            Intent intent3 = new Intent(AdminProfileNavigation.this,addnewfertilizer.class);
+//            startActivity(intent3);
 //
 //        }
-//        else if (id == R.id.nav_updatedeletepot) {
 //
-////            Intent intent = new Intent(AdminProfileNavigation.this,AdminProfileNavigation.class);
-////            intent.putExtra("Admin","Admin");
-////            startActivity(intent);
-//
-//        }
-//        else if (id == R.id.nav_updatedeletefertilizer) {
-//
-//        }
 //        else if (id == R.id.side_nav_logout) {
-////            Paper.book().destroy();
+//
 //
 //        }
 
