@@ -3,61 +3,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_baseline_home_24"
-            android:title="@string/menu_home" />
+        <group android:checkableBehavior="single">
 
-
-
-    </group>
-
-
-
-
-    <item
-
-        android:title="@string/add">
-
-
-        <menu>
-            <group android:checkableBehavior="single">
                 <item
-
-                    android:id="@+id/nav_addpot"
-                    android:icon="@drawable/ic_baseline_add_to_photos_24"
-                    android:title="@string/addpot" />
+                        android:id="@+id/nav_home"
+                        android:icon="@drawable/ic_baseline_home_24"
+                        android:title="@string/menu_home" />
 
                 <item
 
-                    android:id="@+id/nav_addfertilizer"
-                    android:icon="@drawable/ic_baseline_add_to_photos_24"
-                    android:title="@string/addertilizer" />
+                        android:id="@+id/nav_addpot"
+                        android:icon="@drawable/ic_baseline_add_to_photos_24"
+                        android:title="@string/addpot" />
 
-
-
-            </group>
-
-        </menu>
-    </item>
-
-
-
-    <item
-
-        android:title="@string/navProfile">
-
-
-        <menu>
-            <group android:checkableBehavior="single">
                 <item
-                    android:id="@+id/side_nav_logout"
-                    android:icon="@drawable/ic_baseline_logout_24"
-                    android:title="@string/logout" />
 
-            </group>
-        </menu>
+                        android:id="@+id/nav_addfertilizer"
+                        android:icon="@drawable/ic_baseline_add_to_photos_24"
+                        android:title="@string/addertilizer" />
 
-    </item>
+                <item
+                        android:id="@+id/side_nav_logout"
+                        android:icon="@drawable/ic_baseline_logout_24"
+                        android:title="@string/logout" />
+        </group>
+
+
+
 </menu>
